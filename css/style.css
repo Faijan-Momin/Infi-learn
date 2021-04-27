@@ -1674,6 +1674,28 @@ input[type='radio']:checked:after {
     left: 15px;
 }
 /* Dashboard Suject content */
+#teacher-sec-back-btn{
+    display: none;
+}
+.teacher-section-floating-back-btn button{
+    position: absolute;
+    top: 70px;
+    left: 360px;
+    height: 47px;
+    width: 47px;
+    background-color: #fe4a55;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Nunito';
+    font-size: 16px;
+}
+.teacher-section-floating-back-btn button:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.92);
+}
 .teacher-dashboard-content-upload-content{
     margin: auto;
     justify-content: center;

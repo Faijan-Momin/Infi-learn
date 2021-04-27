@@ -45,7 +45,7 @@
             <div id="teacher-dashboard-content-navigation-bar" class="subject-content-navigation-bar">
                 <ul class="teacher-dashboard-content-navigation-bar-ul">
                     <li>
-                        <a class="teacher-dashboard-nav-links" onload="showTechContent('video-upload');" onclick="showTechContent('video-upload');" href="#">
+                        <a class="teacher-dashboard-nav-links" onclick="showTechContent('video-upload');" href="#">
                             <img src="content/icons/file_upload_white_24dp.svg" alt="video upload" height="35px">
                             <span>Upload Videos</span>
                         </a>
@@ -68,6 +68,9 @@
             <!-- teacher Subject content upload panel -->
 
             <div id="teacher-dashboard-content-upload-content" class="teacher-dashboard-content-upload-content">
+                <div id="teacher-sec-back-btn" class="teacher-section-floating-back-btn">
+                    <button onclick="showTechContent('show-subjects');"><img src="content/icons/arrow-btn.svg" alt="back button" class="section-video-player-back-btn-img" height="16px" ></button>
+                </div>
                 <div id="teacher-subject-sel-panel" class="teacher-dashboard-subject-selection-panel">
                     <div id="teacher-select-subject-div" class="select-subject-div">
                         <div class="select-subject-div-title">
@@ -75,7 +78,7 @@
                         </div>
                         <div class="select-subject-div-all-subjects">
                             <!-- First Subject -->
-                            <div class="select-subject-single-sub">
+                            <div class="select-subject-single-sub" onclick="window.location.assign('dashboard.html');">
                                 <div class="select-subject-img">
                                     <img src="content/icons/compass.svg" alt="subject image" height="120px">
                                 </div>
@@ -84,7 +87,7 @@
                                 </div>
                             </div>
                             <!-- Second Subject -->
-                            <div class="select-subject-single-sub" onclick="">
+                            <div class="select-subject-single-sub" onclick="window.location.assign('dashboard.html');">
                                 <div class="select-subject-img">
                                     <img src="content/icons/science.svg" alt="subject image" height="120px">
                                 </div>
@@ -93,7 +96,7 @@
                                 </div>
                             </div>
                             <!-- Third Subject -->
-                            <div class="select-subject-single-sub" onclick="">
+                            <div class="select-subject-single-sub" onclick="window.location.assign('dashboard.html');">
                                 <div class="select-subject-img">
                                     <img src="content/icons/dictionary.svg" alt="subject image" height="120px">
                                 </div>
@@ -102,7 +105,7 @@
                                 </div>
                             </div>
                             <!-- Fourth Subject -->
-                            <div class="select-subject-single-sub" onclick="">
+                            <div class="select-subject-single-sub" onclick="window.location.assign('dashboard.html');">
                                 <div class="select-subject-img">
                                     <img src="content/icons/leader.svg" alt="subject image" height="120px">
                                 </div>
@@ -111,7 +114,7 @@
                                 </div>
                             </div>
                             <!-- Fifth Subject -->
-                            <div class="select-subject-single-sub" onclick="">
+                            <div class="select-subject-single-sub" onclick="window.location.assign('dashboard.html');">
                                 <div class="select-subject-img">
                                     <img src="content/icons/marathi.png" alt="subject image" height="120px">
                                 </div>
@@ -120,7 +123,7 @@
                                 </div>
                             </div>
                             <!-- Sixth Subject -->
-                            <div class="select-subject-single-sub" onclick="">
+                            <div class="select-subject-single-sub" onclick="window.location.assign('dashboard.html');">
                                 <div class="select-subject-img">
                                     <img src="content/icons/hindi.png" alt="subject image" height="120px">
                                 </div>
@@ -148,23 +151,34 @@
                                 <label for="board-select">Class</label>
                                 <select class="teacher-dashboard-input" name="class-select" id="class-select" >
                                     <option disabled selected>Select Class</option>
-                                    <option value="ssc">1</option>
-                                    <option value="ssc">2</option>
-                                    <option value="ssc">3</option>
-                                    <option value="ssc">4</option>
-                                    <option value="ssc">5</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                                 </select>
                             </div>
                             <div class="teacher-dashboard-subject-upload-video-textbox subject">
                                 <label for="board-select">Subject</label>
                                 <select class="teacher-dashboard-input" name="subject-select" id="subject-select" >
-                                    <option disabled selected>English</option>
+                                    <option disabled selected>Select Subject</option>
+                                    <option>Mathematics</option>
+                                    <option>Science</option>
+                                    <option>English</option>
+                                    <option>Social Science</option>
+                                    <option>Marathi</option>
+                                    <option>Hindi</option>
                                 </select>
                             </div>
                             <div class="teacher-dashboard-subject-upload-video-textbox chapter">
                                 <label for="board-select">Chapter</label>
                                 <select class="teacher-dashboard-input" name="chapter-select" id="chapter-select" >
                                     <option disabled selected>Select Chapter</option>
+                                    <option>Chapter 1</option>
+                                    <option>Chapter 2</option>
+                                    <option>Chapter 3</option>
+                                    <option>Chapter 4</option>
+                                    <option>Chapter 5</option>
                                 </select>
                             </div>
                             <div class="teacher-dashboard-subject-upload-video-textbox video">
@@ -198,7 +212,7 @@
                         </div>
                         <div class="teacher-dashboard-subject-upload-video-submit-data-btns">
                             <input type="submit" value="Upload">
-                            <input type="button" value="Cancel">
+                            <input type="button" value="Back" onclick="showTechContent('show-subjects');">
                         </div>
                     </div>
                 </div>
@@ -219,23 +233,34 @@
                                 <label for="board-select">Class</label>
                                 <select class="teacher-dashboard-input" name="class-select" id="class-select" >
                                     <option disabled selected>Select Class</option>
-                                    <option value="ssc">1</option>
-                                    <option value="ssc">2</option>
-                                    <option value="ssc">3</option>
-                                    <option value="ssc">4</option>
-                                    <option value="ssc">5</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
                                 </select>
                             </div>
                             <div class="teacher-dashboard-subject-upload-video-textbox subject">
                                 <label for="board-select">Subject</label>
                                 <select class="teacher-dashboard-input" name="subject-select" id="subject-select" >
-                                    <option disabled selected>English</option>
+                                    <option disabled selected>Select Subject</option>
+                                    <option>Mathematics</option>
+                                    <option>Science</option>
+                                    <option>English</option>
+                                    <option>Social Science</option>
+                                    <option>Marathi</option>
+                                    <option>Hindi</option>
                                 </select>
                             </div>
                             <div class="teacher-dashboard-subject-upload-video-textbox chapter">
                                 <label for="board-select">Chapter</label>
                                 <select class="teacher-dashboard-input" name="chapter-select" id="chapter-select" >
                                     <option disabled selected>Select Chapter</option>
+                                    <option>Chapter 1</option>
+                                    <option>Chapter 2</option>
+                                    <option>Chapter 3</option>
+                                    <option>Chapter 4</option>
+                                    <option>Chapter 5</option>
                                 </select>
                             </div>
                             <!-- <div class="teacher-dashboard-subject-upload-video-textbox video">
@@ -269,7 +294,7 @@
                         </div>
                         <div class="teacher-dashboard-subject-upload-video-submit-data-btns">
                             <input type="submit" value="Upload">
-                            <input type="button" value="Cancel">
+                            <input type="button" value="Back" onclick="showTechContent('show-subjects');">
                         </div>
                     </div>
                 </div>
