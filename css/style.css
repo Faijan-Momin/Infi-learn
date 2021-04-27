@@ -1316,6 +1316,24 @@ input[type='radio']:checked:after {
     padding: 10px 0px;
     display: flex;
 }
+.subject-dashboard-nav-class-and-subject-name button{
+    height: 38px;
+    width: 38px;
+    background-color: #fe4a55;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Nunito';
+    font-size: 16px;
+    margin-right: 20px;
+}
+.subject-dashboard-nav-class-and-subject-name button:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.92);
+}
+
 .subject-dashboard-nav-class-name{
     color: rgba(255, 255, 255, 0.7);
     font-size: 16px;
