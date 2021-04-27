@@ -902,21 +902,22 @@ footer{
 
 
 select {
-    -webkit-appearance: none;
+    /* -webkit-appearance: none;
     -moz-appearance: none;
     -ms-appearance: none;
     appearance: none;
     outline: 0;
     box-shadow: none;
     border: 0 !important;
-    background: #2c3e50;
-    background-image: none;
+    background-image: none; */
   }
   /* Remove IE arrow */
   select::-ms-expand {
     display: none;
   }
-
+select::-webkit-scrollbar{
+    display: none;
+}
 .signup-inputs{
     width: 100px;
     text-align: center;
@@ -1625,3 +1626,229 @@ input[type='radio']:checked:after {
     color: white;
 }
 /* Header Style Imported from select subject panel */
+
+/* Teacher Subject  selection Panel */
+#teacher-infilearn-logo{
+    z-index: 6;
+}
+.teacher-dashboard-content-div{
+    display: flex;
+    height: 100%;
+    gap: 1%;
+    z-index: 1;
+    overflow: hidden;
+}
+#teacher-dashboard-content-navigation-bar{
+    position: relative;
+    height: calc(100%,-60px);
+    z-index: 5;
+}
+.teacher-dashboard-content-navigation-bar-ul{
+    list-style: none;
+    font-size: 22px;
+    color: white;
+    line-height: 90px;
+    margin-top: 100px;
+    padding-left: 25px;
+}
+.teacher-dashboard-nav-links{
+    font-size: 22px;
+    font-family: 'Nunito';
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    cursor: pointer;
+}
+.teacher-dashboard-nav-links-active{
+    font-size: 22px;
+    font-family: 'Nunito';
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+.teacher-dashboard-content-navigation-bar-ul a:hover{
+    color: rgb(255, 255, 255);
+}
+.teacher-dashboard-content-navigation-bar-ul span{
+    position: relative;
+    bottom: 10px;
+    left: 15px;
+}
+/* Dashboard Suject content */
+.teacher-dashboard-content-upload-content{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+#teacher-select-subject-div{
+    display: block;   /* Temperory*/
+    padding: 0px;
+    padding-top: 15px;
+}
+#teacher-select-subject-div h2{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+/* Upload VIdeo */
+.teacher-dashboard-subject-upload-video{
+    margin: auto;
+}
+#teacher-sub-upload-vid{
+    display: none;
+}
+.teacher-dashboard-subject-upload-video-title h3{
+    color: black;
+    font-size: 22px;
+    font-family: 'Nunito';
+    font-weight: 700;
+}
+.teacher-dashboard-subject-upload-video-input-data{
+    display: flex;
+    gap: 20px;
+}
+.teacher-dashboard-subject-upload-video-textbox{
+    display: flex;
+    gap: 10px;
+}
+.teacher-dashboard-subject-upload-video-input-data label{
+    width: 100px;
+    font-size: 18px;
+    font-family: 'Nunito';
+    color: #979797;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+.teacher-dashboard-subject-upload-video-input-data input[type=text]{
+    height: 40px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    margin: 8px;
+    padding: 5px 7px;
+    color: black;
+    outline: none;
+    font-size: 17px;
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+}
+.teacher-dashboard-subject-upload-video-input-data select{
+    height: 40px;
+    width: 300px;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    margin: 8px;
+    padding: 5px 7px;
+    color: black;
+    font-size: 17px;
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+}
+.teacher-dashboard-subject-upload-video-input-data option{
+    background-color: #f8f8f8;
+}
+.teacher-dashboard-subject-upload-video-input-data input[type=file]{
+    height: 50px;
+    width: 300px;
+    background-color: white;
+    margin: 8px;
+    padding: 5px 7px;
+    color: black;
+    outline: none;
+    font-size: 17px;
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+}
+.teacher-dashboard-subject-upload-video-input-data input::-webkit-file-upload-button{
+    height: 35px;
+    width: auto;
+    background-color: white;
+    color: black;
+    padding: 5px 7px;
+    outline: none;
+    font-size: 17px;
+    font-family: 'Nunito';
+    letter-spacing: 1px; 
+    cursor: pointer;
+    border-radius: 7px;
+    border: 2px solid #adadad;
+}
+.teacher-dashboard-subject-upload-video-textbox-description{
+    display: block;
+    margin-top: 10px;
+}
+
+#label-for-board-select{
+    margin: 45px 5px;
+}
+#teacher-description-box{
+    height: 200px;
+    width: 420px;
+}
+.teacher-dashboard-subject-upload-video-submit-data{
+    display: block;
+    margin-top: 20px;
+}
+.teacher-dashboard-subject-upload-video-submit-data-terms input{
+    height: 20px;
+    width: 20px;
+    background-color: #fe4a55;
+    cursor: pointer;
+}
+.teacher-dashboard-subject-upload-video-submit-data-terms span{
+    position: relative;
+    bottom: 3px;
+    left: 10px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Nunito';
+}
+.teacher-dashboard-subject-upload-video-submit-data-terms a{
+    color: #fe4a55;
+    cursor: pointer;
+    text-decoration: none;
+}
+.teacher-dashboard-subject-upload-video-submit-data-btns{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.teacher-dashboard-subject-upload-video-submit-data-btns input[type=submit]{
+    height: 40px;
+    width: 130px;
+    background-color: #fe4a55;
+    color: white;
+    border: 3px solid #ffaab0;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: 'Nunito';
+    cursor: pointer;
+}
+.teacher-dashboard-subject-upload-video-submit-data-btns input[type=submit]:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.94);
+}
+.teacher-dashboard-subject-upload-video-submit-data-btns input[type=button]{
+    height: 40px;
+    width: 130px;
+    background-color: white;
+    color: #221638;
+    border: 3px solid #221638;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: 'Nunito';
+    cursor: pointer;
+}
+.teacher-dashboard-subject-upload-video-submit-data-btns input[type=button]:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.94);
+}
+ /* File Upload Sectiom */
+ #teacher-sub-upload-file{
+     display: none;
+ }
+ #file-upload-files{
+     margin-top: 15px;
+ }
