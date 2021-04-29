@@ -399,7 +399,6 @@ table {
 }
 /* Collapsible */
 
-
 .acc-container {
     width:90%;
     margin:30px auto 30px auto;
@@ -410,33 +409,28 @@ table {
     overflow: hidden;
     color: white;
   }
-  
   .acc-btn { 
     width:100%;
     margin:0 auto;
-    padding:20px 25px;
+    padding:10px 25px;
     cursor:pointer;
     background: #1b215a;
     border-bottom:1px solid #2d3480;
   }
-  
   .acc-content {
     width:100%;
     margin:0 auto;
     display: none;
     background:#151943;
-    padding:30px;
+    padding:10px 90px;
     height: auto;
   }
-  
   .acc-content p, .acc-content h3, .acc-content h2 {
       width: 90%;
   }
-  
   .acc-container p { 
     color: white;
   }
-  
   .acc-container h3 {
       color: white;
   }
