@@ -67,7 +67,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="admin-dashboard-nav-links" onclick="showAdminPanelli('');" href="#">
+                        <a class="admin-dashboard-nav-links" onclick="showAdminPanelli('manage-syllabus');" href="#">
                             <img src="content/icons/admin/syllabus.svg" alt="video upload" height="35px">
                             <span>Manage Syllabus</span>
                         </a>
@@ -854,6 +854,31 @@
                         </table>
                     </div>
                 </div>
+                <!-- Syllabus -->
+                <div id="admin-panel-manage-syllabus" class="admin-dashboard-manage-users">
+                    <div class="acc-container">
+                        <div class="acc-btn"><h3>Topic 1</h3></div>
+                        <div class="acc-content">
+                            <p>Chapter 1</p>
+                        </div>
+                
+                        <div class="acc-btn"><h3>Topic 2</h3></div>
+                        <div class="acc-content">
+                            <p>Chapter 2</p>
+                        </div>
+                
+                        <div class="acc-btn"><h3>Topic 3</h3></div>
+                        <div class="acc-content">
+                            <p>Chapter 3</p>
+                        </div>
+                
+                        <div class="acc-btn"><h3>Topic 4</h3></div>
+                        <div class="acc-content">
+                            <p>Chapter 4</p>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Manage Request -->
                 <div id="admin-panel-manage-request" class="admin-dashboard-manage-users">
                     <div id="admin-dashboard-manage-video-searchbox-dropdwn" class="admin-dashboard-manage-users-searchbox-dropdwn">
@@ -1358,6 +1383,8 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
     <script>
 
         // For chap no and name
@@ -1368,6 +1395,15 @@
                 event.preventDefault();
             });
         });
+        $('.acc-btn').click(function(){
+            if ( $(this).next().is( ":hidden" ) ) {
+            $('.acc-content').slideUp('selected');
+            $(this).next().slideDown('selected');
+            } else {
+            $(this).next().slideUp('selected');
+            };
+        });
+
 
     </script>
 </body>
