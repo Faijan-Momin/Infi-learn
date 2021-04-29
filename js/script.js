@@ -50,11 +50,11 @@ function showTechContent(nameofdiv){
 
 // Admin Panel Dashboard
 window.onload = function showAdminPanellis(){
-    var manage_user = document.getElementById('admin-panel-manage-user').style.display ="block";
+    var manage_user = document.getElementById('admin-panel-manage-user').style.display ="none";
     var manage_video = document.getElementById('admin-panel-manage-video').style.display ="none";
     var manage_file = document.getElementById('admin-panel-manage-file').style.display ="none";
     var manage_req = document.getElementById('admin-panel-manage-request').style.display ="none";
-    var manage_analytics = document.getElementById('admin-panel-manage-analytics').style.display ="none";
+    var manage_analytics = document.getElementById('admin-panel-manage-analytics').style.display ="block";
     var upload_vid = document.getElementById('admin-sub-upload-vid').style.display ="none";
     var upload_file = document.getElementById('admin-sub-upload-file').style.display ="none";
 }
