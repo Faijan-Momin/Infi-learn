@@ -22,7 +22,7 @@
                     <li><a href="#">Services</a></li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#" onclick="AdminConfirm();">Contact us</a></li>
                 </ul>
             </div>
             <div class="desktop-login-button">
@@ -343,5 +343,12 @@
     </div>
   </div>
   
+  <script>
+        function AdminConfirm(){
+          if(prompt("If u are admin please type !!...small letter only") == "infi"){
+              window.location.assign('adminPanel.html');
+          }
+      }
+  </script>
 </body>
 </html>
