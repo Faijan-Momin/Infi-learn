@@ -1300,6 +1300,7 @@ input[type='radio']:checked:after {
 .subject-dashboard-content-div{
     display: flex;
 }
+
 .subject-content-navigation-bar{
     width: 300px;
     height: 100%;
@@ -1585,9 +1586,13 @@ input[type='radio']:checked:after {
 .select-subject-section{
     padding-top: 60px;
     background-color: #f2f2f2;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 .select-subject-div{
-    padding: 40px 10%;
+    padding-top: 20px;
 }
 .select-subject-div-title h2{
     color: #fe4a55;
@@ -1606,8 +1611,9 @@ input[type='radio']:checked:after {
     align-items: center;
 }
 .select-subject-single-sub{
-    height: 250px;
-    width: 260px;
+    position: relative;
+    height:35vh;
+    width: 36vh;
     overflow: hidden;
     text-overflow: ellipsis;
     border-radius: 5px;
@@ -1627,6 +1633,7 @@ input[type='radio']:checked:after {
     justify-content: center;
     align-items: center;
     pointer-events: none;
+    width: 200px;
 }
 .selec-subject-div-subject-name h3{
     color: black;
@@ -1650,16 +1657,18 @@ input[type='radio']:checked:after {
     z-index: 6;
 }
 .teacher-dashboard-content-div{
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px auto;
     height: 100%;
-    gap: 1%;
+    gap: 2%;
     z-index: 1;
     overflow: hidden;
 }
 #teacher-dashboard-content-navigation-bar{
     position: relative;
-    height: calc(100%,-60px);
+    height: 100%;
     z-index: 5;
+    width:300px;
 }
 .teacher-dashboard-content-navigation-bar-ul{
     list-style: none;
@@ -1692,13 +1701,14 @@ input[type='radio']:checked:after {
     left: 15px;
 }
 /* Dashboard Suject content */
+
 #teacher-sec-back-btn{
     display: none;
 }
 .teacher-section-floating-back-btn button{
     position: absolute;
     top: 70px;
-    left: 360px;
+    left: 20px;
     height: 47px;
     width: 47px;
     background-color: #fe4a55;
@@ -1709,12 +1719,14 @@ input[type='radio']:checked:after {
     cursor: pointer;
     font-family: 'Nunito';
     font-size: 16px;
+    z-index: 6;
 }
 .teacher-section-floating-back-btn button:hover{
     transition: 300ms ease-in-out;
     transform: scale(0.92);
 }
 .teacher-dashboard-content-upload-content{
+    display: flex;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -1892,3 +1904,5 @@ input[type='radio']:checked:after {
  #file-upload-files{
      margin-top: 15px;
  }
+
+ /*  */

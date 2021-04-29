@@ -1,0 +1,1374 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Infilearn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="subject-dashboard-header-desktop">
+            <div id="teacher-infilearn-logo" class="subject-dashboard-header-title">
+                <a href="index.html">
+                    <img  class="infilearn-logo" src="content/icons/new.png" alt="Infilearn Logo" height="60px">
+                </a>            
+            </div>
+            <div class="subject-dashboard-header-search-bar">
+               <!-- Null -->
+            </div>
+            <div class="subject-dashboard-header-profile">
+                <div class="subject-dashboard-header-profile-box">
+                    <p>Faijan Momin</p>
+                    <div class="subject-dashboard-profile-dp" onclick="showDrpDwn();">
+                        <img src="https://static5.depositphotos.com/1049184/509/i/600/depositphotos_5099757-stock-photo-the-man-with-no-face.jpg" alt="user profile" height="100%" width="100%">
+                    </div> <!--Dashboard user Profile Photo-->
+                </div>
+                <div id="subject-dashboard-profile-drowdown" class="subject-dashboard-profile-drowdown">
+                    <a href="#">Profile</a>
+                    <hr class="dropdwon-profile-hr">
+                    <a href="index.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Select subject -->
+
+    <section class="admin-dashboard-section">
+        <div class="admin-dashboard-content-div">
+            <!-- TEACHER Subject navigation Bar -->
+            <div id="admin-dashboard-content-navigation-bar" class="admin-subject-content-navigation-bar">
+                <ul class="admin-dashboard-content-navigation-bar-ul">
+                    <li>
+                        <a class="admin-dashboard-nav-links" onclick="showAdminPanelli('manage-user');" href="#">
+                            <img src="content/icons/admin/manage-users.svg" alt="video upload" height="35px">
+                            <span>Manage Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="admin-dashboard-nav-links" onclick="showAdminPanelli('manage-video');" href="#">
+                            <img src="content/icons/admin/manage-videos.svg" alt="file upload" height="35px">
+                            <span>Manage Videos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="admin-dashboard-nav-links" onclick="showAdminPanelli('manage-file');" href="#">
+                            <img src="content/icons/admin/manage-file.svg" alt="history" height="35px">
+                            <span>Manage Files</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="admin-dashboard-nav-links" onclick="showAdminPanelli('');" href="#">
+                            <img src="content/icons/admin/syllabus.svg" alt="video upload" height="35px">
+                            <span>Manage Syllabus</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="admin-dashboard-nav-links" onclick="showAdminPanelli('manage-req');" href="#">
+                            <img src="content/icons/admin/Request.svg" alt="video upload" height="35px">
+                            <span>Manage Requests</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="admin-dashboard-nav-links" onclick="showAdminPanelli('manage-analytics');" href="#">
+                            <img src="content/icons/admin/analytics_white_36dp.svg" alt="video upload" height="35px">
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- teacher Subject content upload panel -->
+
+            <div id="admin-dashboard-content-all-content" class="admin-dashboard-content-all-content">
+                <!-- Manage USers -->
+                <div id="admin-panel-manage-user" class="admin-dashboard-manage-users">
+                    <div class="admin-dashboard-manage-users-searchbox-dropdwn">
+                        <div class="admin-dashboard-search-bar-box">
+                            <input type="text" name="dashboard-search" id="dashboard-search" placeholder="Username / Email">
+                            <input type="button" value="">
+                        </div>
+                        <div class="admin-dashboard-dropdwn-menu">
+                            <select name="users" id="">
+                                <option selected disabled value="">Select</option>
+                                <option value="all-users">All users</option>
+                                <option value="blocked-users">Blocked users</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="teacher-dashboard-subject-upload-video-title">
+                        <h3>User Details</h3>
+                    </div>
+                    <div class="admin-dashboard-manage-user-table">
+                        <table class="admin-dashboard-manage-user-table-table">
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Mobile No</th>
+                                <th>City</th>
+                                <th>Birth Date</th>
+                                <th>Gender</th>
+                                <th>Board</th>
+                                <th>Grade</th>
+                                <th>Registration Date</th>
+                                <th>Last Seen</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Active</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Active</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Active</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Active</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Active</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Active</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Active</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Active</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Active</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Active</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+                <!-- Manage Videos -->
+                <div id="admin-panel-manage-video" class="admin-dashboard-manage-users">
+                    <div class="admin-dashboard-manage-user-add-video-and-serch">
+                        <div class="admin-dashboard-manage-users-searchbox-add-vid">
+                            <button onclick="showAdminPanelli('upload-vid');">Add Video</button>
+                        </div>
+                        <div id="admin-dashboard-manage-video-searchbox-dropdwn" class="admin-dashboard-manage-users-searchbox-dropdwn">
+                            <div class="admin-dashboard-search-bar-box">
+                                <input type="text" name="dashboard-search" id="dashboard-search" placeholder="Creator / Title / Subject">
+                                <input type="button" value="">
+                            </div>
+                            <div class="admin-dashboard-dropdwn-menu">
+                                <select name="users" id="">
+                                    <option selected disabled value="">Select</option>
+                                    <option value="all-users">All users</option>
+                                    <option value="blocked-users">Blocked users</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="teacher-dashboard-subject-upload-video-title">
+                        <h3>User Details</h3>
+                    </div>
+                    <div class="admin-dashboard-manage-user-table">
+                        <table class="admin-dashboard-manage-user-table-table">
+                            <tr>
+                                <th>Board</th>
+                                <th>Class</th>
+                                <th>Subject</th>
+                                <th>Chapter</th>
+                                <th>Topic</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Created By</th>
+                                <th>Email</th>
+                                <th>Upload Time</th>
+                                <th>Views</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                </div>
+                <!-- Manage Files -->
+                <div id="admin-panel-manage-file" class="admin-dashboard-manage-users">
+                    <div class="admin-dashboard-manage-user-add-video-and-serch">
+                        <div class="admin-dashboard-manage-users-searchbox-add-vid">
+                            <button onclick="showAdminPanelli('upload-file');">Add File</button>
+                        </div>
+                        <div id="admin-dashboard-manage-video-searchbox-dropdwn" class="admin-dashboard-manage-users-searchbox-dropdwn">
+                            <div class="admin-dashboard-search-bar-box">
+                                <input type="text" name="dashboard-search" id="dashboard-search" placeholder="Creator / Title / Subject">
+                                <input type="button" value="">
+                            </div>
+                            <div class="admin-dashboard-dropdwn-menu">
+                                <select name="users" id="">
+                                    <option selected disabled value="">Select</option>
+                                    <option value="all-users">All users</option>
+                                    <option value="blocked-users">Blocked users</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="teacher-dashboard-subject-upload-video-title">
+                        <h3>User Details</h3>
+                    </div>
+                    <div class="admin-dashboard-manage-user-table">
+                        <table class="admin-dashboard-manage-user-table-table">
+                            <tr>
+                                <th>Board</th>
+                                <th>Class</th>
+                                <th>Subject</th>
+                                <th>Chapter</th>
+                                <th>Topic</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Created By</th>
+                                <th>Email</th>
+                                <th>Upload Time</th>
+                                <th>Views</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>580</td>
+                                <td class="admin-table-action-btns-manage-video">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                </div>
+                <!-- Manage Request -->
+                <div id="admin-panel-manage-request" class="admin-dashboard-manage-users">
+                    <div id="admin-dashboard-manage-video-searchbox-dropdwn" class="admin-dashboard-manage-users-searchbox-dropdwn">
+                            <div class="admin-dashboard-search-bar-box">
+                                <input type="text" name="dashboard-search" id="dashboard-search" placeholder="Username">
+                                <input type="button" value="">
+                            </div>
+                            <div class="admin-dashboard-dropdwn-menu">
+                                <!-- <select name="users" id="">
+                                    <option selected disabled value="">Select</option>
+                                    <option value="all-users">All users</option>
+                                    <option value="blocked-users">Blocked users</option>
+                                </select> -->
+                            </div>
+                    </div>                    
+                    <div class="teacher-dashboard-subject-upload-video-title">
+                        <h3>Upload Requests</h3>
+                    </div>
+                    <div class="admin-dashboard-manage-user-table">
+                        <table class="admin-dashboard-manage-user-table-table">
+                            <tr>
+                                <th>Type</th>
+                                <th>Board</th>
+                                <th>Class</th>
+                                <th>Subject</th>
+                                <th>Chapter</th>
+                                <th>Topic</th>
+                                <th>Title</th>
+                                <th>Description</th>
+                                <th>Date/Time</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>File</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>20-04-2021<br>10:22:04</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td class="admin-table-action-btns-manage-req">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Video</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>20-04-2021<br>10:22:04</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td class="admin-table-action-btns-manage-req">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Video</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>20-04-2021<br>10:22:04</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td class="admin-table-action-btns-manage-req">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Video</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>20-04-2021<br>10:22:04</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td class="admin-table-action-btns-manage-req">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>File</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>20-04-2021<br>10:22:04</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td class="admin-table-action-btns-manage-req">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>File</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>20-04-2021<br>10:22:04</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td class="admin-table-action-btns-manage-req">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Video</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>20-04-2021<br>10:22:04</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td class="admin-table-action-btns-manage-req">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Video</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>20-04-2021<br>10:22:04</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td class="admin-table-action-btns-manage-req">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>File</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>20-04-2021<br>10:22:04</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td class="admin-table-action-btns-manage-req">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>File</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>Science</td>
+                                <td>Reproduction</td>
+                                <td>Animals</td>
+                                <td>Introduction...</td>
+                                <td>lorem ipsum...</td>
+                                <td>20-04-2021<br>10:22:04</td>
+                                <td>Faijan Momin</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td class="admin-table-action-btns-manage-req">
+                                    <button>
+                                        <img src="content/icons/admin/Edit.svg" alt="edit action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="remove action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </div>
+                </div>
+                <!-- Analytics -->
+                <div id="admin-panel-manage-analytics" class="admin-dashboard-manage-users">
+                    <div class="admin-panel-all-analytics">
+                        <div class="admin-panel-first-four">
+                            <!-- Users -->
+                            <div class="admin-panel-single-analytic">
+                                <div id="analytic-img-users" class="admin-panel-analytic-img">
+                                    <!-- img here -->
+                                </div>
+                                <div class="admin-panel-analytic-data">
+                                    <h3>3000</h3>
+                                    <h5>Users</h5>
+                                </div>
+                            </div>
+                            <!-- teachers -->
+                            <div class="admin-panel-single-analytic">
+                                <div id="analytic-img-teachers" class="admin-panel-analytic-img">
+                                    <!-- img here -->
+                                </div>
+                                <div class="admin-panel-analytic-data">
+                                    <h3>3000</h3>
+                                    <h5>Teachers</h5>
+                                </div>
+                            </div>
+                            <!-- students -->
+                            <div class="admin-panel-single-analytic">
+                                <div id="analytic-img-students" class="admin-panel-analytic-img">
+                                    <!-- img here -->
+                                </div>
+                                <div class="admin-panel-analytic-data">
+                                    <h3>3000</h3>
+                                    <h5>Students</h5>
+                                </div>
+                            </div>
+                            <!-- visits -->
+                            <div class="admin-panel-single-analytic">
+                                <div id="analytic-img-visits" class="admin-panel-analytic-img">
+                                    <!-- img here -->
+                                </div>
+                                <div class="admin-panel-analytic-data">
+                                    <h3>3000</h3>
+                                    <h5>Visits</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admin-panel-middle-two">
+                            <!-- videos -->
+                            <div class="admin-panel-single-analytic">
+                                <div id="analytic-img-videos" class="admin-panel-analytic-img">
+                                    <!-- img here -->
+                                </div>
+                                <div class="admin-panel-analytic-data">
+                                    <h3>3000</h3>
+                                    <h5>Videos</h5>
+                                </div>
+                            </div>
+                            <!-- files -->
+                            <div class="admin-panel-single-analytic">
+                                <div id="analytic-img-files" class="admin-panel-analytic-img">
+                                    <!-- img here -->
+                                </div>
+                                <div class="admin-panel-analytic-data">
+                                    <h3>3000</h3>
+                                    <h5>Files</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="admin-panel-last-one">
+                            <!-- BLocked Users -->
+                            <div class="admin-panel-single-analytic">
+                                <div id="analytic-img-block-user" class="admin-panel-analytic-img">
+                                    <!-- img here -->
+                                </div>
+                                <div class="admin-panel-analytic-data">
+                                    <h3>3000</h3>
+                                    <h5>Blocked</h5>
+                                </div>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+                <!-- Upload Video -->
+                <div id="admin-sub-upload-vid" class="admin-dashboard-subject-upload-video">
+                    
+                    <div class="teacher-dashboard-subject-upload-video-title">
+                        <h3>Upload Video</h3>
+                    </div>
+                    <div class="teacher-dashboard-subject-upload-video-input-data">
+                        <div class="teacher-dashboard-subject-upload-video-left-inputs">
+                            <div class="teacher-dashboard-subject-upload-video-textbox board">
+                                <label for="board-select">Board</label>
+                                <select class="teacher-dashboard-input" name="board-select" id="board-select" >
+                                    <option disabled selected>Select Board</option>
+                                    <option value="ssc">State Board</option>
+                                </select>
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox class">
+                                <label for="board-select">Class</label>
+                                <select class="teacher-dashboard-input" name="class-select" id="class-select" >
+                                    <option disabled selected>Select Class</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox subject">
+                                <label for="board-select">Subject</label>
+                                <select class="teacher-dashboard-input" name="subject-select" id="subject-select" >
+                                    <option disabled selected>Select Subject</option>
+                                    <option>Mathematics</option>
+                                    <option>Science</option>
+                                    <option>English</option>
+                                    <option>Social Science</option>
+                                    <option>Marathi</option>
+                                    <option>Hindi</option>
+                                </select>
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox chapter">
+                                <label for="board-select">Chapter</label>
+                                <select class="teacher-dashboard-input" name="chapter-select" id="chapter-select" >
+                                    <option disabled selected>Select Chapter</option>
+                                    <option>Chapter 1</option>
+                                    <option>Chapter 2</option>
+                                    <option>Chapter 3</option>
+                                    <option>Chapter 4</option>
+                                    <option>Chapter 5</option>
+                                </select>
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox video">
+                                <label for="board-select">Video</label>
+                                <input type="file" name="video-file" id="video-file" accept=".mp4,.mkv">
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox file">
+                                <label for="board-select">File</label>
+                                <input type="file" name="pdf-file" id="pdf-file" accept=".pdf,.doc,.docx">
+                            </div>
+                        </div>
+                        <div class="teacher-dashboard-subject-upload-video-right-inputs">
+                            <div class="teacher-dashboard-subject-upload-video-textbox title">
+                                <label for="board-select">Title</label>
+                                <input type="text">
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox topic">
+                                <label for="board-select">Topic</label>
+                                <input type="text">
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox-description">
+                                <label id="label-for-board-select" for="board-select">Description</label> <br>
+                                <input type="text" id="teacher-description-box">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-dashboard-subject-upload-video-submit-data">
+                        <div class="teacher-dashboard-subject-upload-video-submit-data-terms">
+                            <input type="checkbox" name="terms-conditns" id="terms-conditns"><span class="checkmark"></span>
+                            <span>I agree to <a href="#">terms and conditions</a></span>
+                        </div>
+                        <div class="teacher-dashboard-subject-upload-video-submit-data-btns">
+                            <input type="submit" value="Upload">
+                            <input type="button" value="Back" onclick="showAdminPanelli('manage-video');">
+                        </div>
+                    </div>
+                </div>
+                <!-- Upload FIle -->
+                <div id="admin-sub-upload-file" class="admin-dashboard-subject-upload-file">
+                    <div class="teacher-dashboard-subject-upload-video-title">
+                        <h3>Upload File</h3>
+                    </div>
+                    <div class="teacher-dashboard-subject-upload-video-input-data">
+                        <div class="teacher-dashboard-subject-upload-video-left-inputs">
+                            <div class="teacher-dashboard-subject-upload-video-textbox board">
+                                <label for="board-select">Board</label>
+                                <select class="teacher-dashboard-input" name="board-select" id="board-select" >
+                                    <option disabled selected>Select Board</option>
+                                    <option value="ssc">State Board</option>
+                                </select>
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox class">
+                                <label for="board-select">Class</label>
+                                <select class="teacher-dashboard-input" name="class-select" id="class-select" >
+                                    <option disabled selected>Select Class</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox subject">
+                                <label for="board-select">Subject</label>
+                                <select class="teacher-dashboard-input" name="subject-select" id="subject-select" >
+                                    <option disabled selected>Select Subject</option>
+                                    <option>Mathematics</option>
+                                    <option>Science</option>
+                                    <option>English</option>
+                                    <option>Social Science</option>
+                                    <option>Marathi</option>
+                                    <option>Hindi</option>
+                                </select>
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox chapter">
+                                <label for="board-select">Chapter</label>
+                                <select class="teacher-dashboard-input" name="chapter-select" id="chapter-select" >
+                                    <option disabled selected>Select Chapter</option>
+                                    <option>Chapter 1</option>
+                                    <option>Chapter 2</option>
+                                    <option>Chapter 3</option>
+                                    <option>Chapter 4</option>
+                                    <option>Chapter 5</option>
+                                </select>
+                            </div>
+                            <!-- <div class="teacher-dashboard-subject-upload-video-textbox video">
+                                <label for="board-select">Video</label>
+                                <input type="file" name="video-file" id="video-file" accept=".mp4,.mkv">
+                            </div> -->
+                            <div id="file-upload-files" class="teacher-dashboard-subject-upload-video-textbox file">
+                                <label for="board-select">File</label>
+                                <input type="file" name="pdf-file" id="pdf-file" accept=".pdf,.doc,.docx">
+                            </div>
+                        </div>
+                        <div class="teacher-dashboard-subject-upload-video-right-inputs">
+                            <div class="teacher-dashboard-subject-upload-video-textbox title">
+                                <label for="board-select">Title</label>
+                                <input type="text">
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox topic">
+                                <label for="board-select">Topic</label>
+                                <input type="text">
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox-description">
+                                <label id="label-for-board-select" for="board-select">Description</label> <br>
+                                <input type="text" id="teacher-description-box">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="teacher-dashboard-subject-upload-video-submit-data">
+                        <div class="teacher-dashboard-subject-upload-video-submit-data-terms">
+                            <input type="checkbox" name="terms-conditns" id="terms-conditns"><span class="checkmark"></span>
+                            <span>I agree to <a href="#">terms and conditions</a></span>
+                        </div>
+                        <div class="teacher-dashboard-subject-upload-video-submit-data-btns">
+                            <input type="submit" value="Upload">
+                            <input type="button" value="Back" onclick="showAdminPanelli('manage-file');">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+    <script>
+
+        // For chap no and name
+        jQuery(document).ready(function(){
+            jQuery('.admin-dashboard-nav-links').click(function(event){
+                jQuery('.admin-dashboard-nav-links-active').removeClass('admin-dashboard-nav-links-active');
+                jQuery(this).addClass('admin-dashboard-nav-links-active'); 
+                event.preventDefault();
+            });
+        });
+
+    </script>
+</body>
+</html>
