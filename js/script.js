@@ -48,6 +48,21 @@ function showTechContent(nameofdiv){
     }
 }
 
+// Manage UserS
+
+function ManageUsers(){
+    var manage_user_select = document.getElementById("manage-user-select").value;
+    if(manage_user_select == "all-users"){
+        document.getElementById('manage-user-all-user').style.display ="block";
+        document.getElementById('manage-user-blocked-user').style.display ="none";
+    }
+    if(manage_user_select == "blocked-users"){
+        document.getElementById('manage-user-all-user').style.display ="none";
+        document.getElementById('manage-user-blocked-user').style.display ="block";
+    }
+    
+}
+
 // Admin Panel Dashboard
 window.onload = function showAdminPanellis(){
     var manage_user = document.getElementById('admin-panel-manage-user').style.display ="none";

@@ -92,8 +92,8 @@
                             <input type="button" value="">
                         </div>
                         <div class="admin-dashboard-dropdwn-menu">
-                            <select name="users" id="">
-                                <option selected disabled value="">Select</option>
+                            <select name="users" id="manage-user-select" onchange="ManageUsers();">
+                                <option selected disabled>Select</option>
                                 <option value="all-users">All users</option>
                                 <option value="blocked-users">Blocked users</option>
                             </select>
@@ -102,7 +102,8 @@
                     <div class="teacher-dashboard-subject-upload-video-title">
                         <h3>User Details</h3>
                     </div>
-                    <div class="admin-dashboard-manage-user-table">
+                    <!-- All USers -->
+                    <div id="manage-user-all-user" class="admin-dashboard-manage-user-table">
                         <table class="admin-dashboard-manage-user-table-table">
                             <tr>
                                 <th>Name</th>
@@ -331,6 +332,248 @@
                                 <td>05:28:12</td>
                                 <td>Student</td>
                                 <td>Active</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </div>
+                    <!-- Block Users0 -->
+                    <div id="manage-user-blocked-user" class="admin-dashboard-manage-user-table">
+                        <table class="admin-dashboard-manage-user-table-table">
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Mobile No</th>
+                                <th>City</th>
+                                <th>Birth Date</th>
+                                <th>Gender</th>
+                                <th>Board</th>
+                                <th>Grade</th>
+                                <th>Registration Date</th>
+                                <th>Last Seen</th>
+                                <th>Role</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Blocked</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Blocked</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Blocked</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin21@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Blocked</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Blocked</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Blocked</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Blocked</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Blocked</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Blocked</td>
+                                <td class="admin-table-action-btns">
+                                    <button>
+                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                    </button>
+                                    <button>
+                                        <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Faijan Mominn</td>
+                                <td>faijanmomin22@gmail.com</td>
+                                <td>9144449994</td>
+                                <td>Pune</td>
+                                <td>06-08-2002</td>
+                                <td>Male</td>
+                                <td>SSC</td>
+                                <td>5th</td>
+                                <td>29-04-2020<br>05:22:45</td>
+                                <td>05:28:12</td>
+                                <td>Student</td>
+                                <td>Blocked</td>
                                 <td class="admin-table-action-btns">
                                     <button>
                                         <img src="content/icons/admin/block.svg" alt="block action" height="15px">

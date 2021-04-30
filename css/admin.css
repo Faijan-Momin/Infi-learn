@@ -202,6 +202,9 @@ table {
 #admin-dashboard-manage-video-searchbox-dropdwn{
     gap: 20px;
 }
+.admin-dashboard-dropdwn-menu select{
+    cursor: pointer;
+}
 /* Manage Video */
 .admin-dashboard-manage-users-searchbox-add-vid button{
     height: 35px;
@@ -372,6 +375,7 @@ table {
     background-repeat: no-repeat;
     background-size: 50px;   
 }
+
 #admin-sub-upload-vid{
     display: none;
 }
@@ -379,6 +383,9 @@ table {
     display: none;
 }
 #admin-panel-manage-user{
+    display: none;
+}
+#manage-user-blocked-user{
     display: none;
 }
 #admin-panel-manage-video{
