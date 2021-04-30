@@ -518,7 +518,9 @@ table {
     transition: 300ms ease-in-out;
     transform: scale(0.93);
 }
-
+#admin-panel-syllabus-input-content-text-desc{
+    height: 150px;
+}
 /* Collapsible */
 
 .acc-container {
