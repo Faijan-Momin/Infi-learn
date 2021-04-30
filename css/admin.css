@@ -231,7 +231,7 @@ table {
     border-radius: 5px;
 }
 .admin-table-action-btns-manage-video button:nth-child(1){
-    background-color: #50fe4a;
+    background-color: #221638;
 }
 .admin-table-action-btns-manage-video button:nth-child(2){
     background-color: #fe4a55;
@@ -248,7 +248,7 @@ table {
     border-radius: 5px;
 }
 .admin-table-action-btns-manage-req button:nth-child(1){
-    background-color: #32b92d;
+    background-color: #221638;
 }
 .admin-table-action-btns-manage-req button:nth-child(2){
     background-color: #fe4a55;
