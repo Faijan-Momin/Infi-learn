@@ -377,7 +377,7 @@
                                 <td>Blocked</td>
                                 <td class="admin-table-action-btns">
                                     <button>
-                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                        <img src="content/icons/admin/check.svg" alt="block action" height="15px">
                                     </button>
                                     <button>
                                         <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
@@ -400,7 +400,7 @@
                                 <td>Blocked</td>
                                 <td class="admin-table-action-btns">
                                     <button>
-                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                        <img src="content/icons/admin/check.svg" alt="block action" height="15px">
                                     </button>
                                     <button>
                                         <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
@@ -422,7 +422,7 @@
                                 <td>Blocked</td>
                                 <td class="admin-table-action-btns">
                                     <button>
-                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                        <img src="content/icons/admin/check.svg" alt="block action" height="15px">
                                     </button>
                                     <button>
                                         <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
@@ -444,7 +444,7 @@
                                 <td>Blocked</td>
                                 <td class="admin-table-action-btns">
                                     <button>
-                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                        <img src="content/icons/admin/check.svg" alt="block action" height="15px">
                                     </button>
                                     <button>
                                         <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
@@ -466,7 +466,7 @@
                                 <td>Blocked</td>
                                 <td class="admin-table-action-btns">
                                     <button>
-                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                        <img src="content/icons/admin/check.svg" alt="block action" height="15px">
                                     </button>
                                     <button>
                                         <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
@@ -488,7 +488,7 @@
                                 <td>Blocked</td>
                                 <td class="admin-table-action-btns">
                                     <button>
-                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                        <img src="content/icons/admin/check.svg" alt="block action" height="15px">
                                     </button>
                                     <button>
                                         <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
@@ -510,7 +510,7 @@
                                 <td>Blocked</td>
                                 <td class="admin-table-action-btns">
                                     <button>
-                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                        <img src="content/icons/admin/check.svg" alt="block action" height="15px">
                                     </button>
                                     <button>
                                         <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
@@ -532,7 +532,7 @@
                                 <td>Blocked</td>
                                 <td class="admin-table-action-btns">
                                     <button>
-                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                        <img src="content/icons/admin/check.svg" alt="block action" height="15px">
                                     </button>
                                     <button>
                                         <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
@@ -554,7 +554,7 @@
                                 <td>Blocked</td>
                                 <td class="admin-table-action-btns">
                                     <button>
-                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                        <img src="content/icons/admin/check.svg" alt="block action" height="15px">
                                     </button>
                                     <button>
                                         <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
@@ -576,7 +576,7 @@
                                 <td>Blocked</td>
                                 <td class="admin-table-action-btns">
                                     <button>
-                                        <img src="content/icons/admin/block.svg" alt="block action" height="15px">
+                                        <img src="content/icons/admin/check.svg" alt="block action" height="15px">
                                     </button>
                                     <button>
                                         <img src="content/icons/admin/remove.svg" alt="block action" height="15px">
@@ -1907,12 +1907,19 @@
                             </div> -->
                         </div>
                         <div class="teacher-dashboard-subject-upload-video-right-inputs">
-                            <div class="teacher-dashboard-subject-upload-video-textbox title">
-                                <label for="board-select">Title</label>
-                                <input type="text">
-                            </div>
                             <div class="teacher-dashboard-subject-upload-video-textbox topic">
                                 <label for="board-select">Topic</label>
+                                <select class="teacher-dashboard-input" name="chapter-select" id="chapter-select" >
+                                    <option disabled selected>Select Topic</option>
+                                    <option>Topic 1</option>
+                                    <option>Topic 2</option>
+                                    <option>Topic 3</option>
+                                    <option>Topic 4</option>
+                                    <option>Topic 5</option>
+                                </select>
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox title">
+                                <label for="board-select">Title</label>
                                 <input type="text">
                             </div>
                             <div class="teacher-dashboard-subject-upload-video-textbox-description">
@@ -1990,12 +1997,19 @@
                             </div>
                         </div>
                         <div class="teacher-dashboard-subject-upload-video-right-inputs">
-                            <div class="teacher-dashboard-subject-upload-video-textbox title">
-                                <label for="board-select">Title</label>
-                                <input type="text">
-                            </div>
                             <div class="teacher-dashboard-subject-upload-video-textbox topic">
                                 <label for="board-select">Topic</label>
+                                <select class="teacher-dashboard-input" name="chapter-select" id="chapter-select" >
+                                    <option disabled selected>Select Topic</option>
+                                    <option>Topic 1</option>
+                                    <option>Topic 2</option>
+                                    <option>Topic 3</option>
+                                    <option>Topic 4</option>
+                                    <option>Topic 5</option>
+                                </select>
+                            </div>
+                            <div class="teacher-dashboard-subject-upload-video-textbox title">
+                                <label for="board-select">Title</label>
                                 <input type="text">
                             </div>
                             <div class="teacher-dashboard-subject-upload-video-textbox-description">
