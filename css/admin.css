@@ -546,14 +546,14 @@ table {
     margin:0 auto;
     padding:10px 25px;
     cursor:pointer;
-    background: #2e3892;
+    background: #6f7bff;
     border-bottom:1px solid #2d3480;
   }
   .acc-two-content {
     width:100%;
     margin:0 auto;
     display: none;
-    background:#6f7bff;
+    background:#2e3892;
     padding:10px 50px;
     height: auto;
   }
@@ -562,14 +562,14 @@ table {
     margin:0 auto;
     padding:10px 25px;
     cursor:pointer;
-    background: #a4aeff;
+    background: #c0c5ff;
     border-bottom:1px solid #2d3480;
   }
   .acc-three-content {
     width:100%;
     margin:0 auto;
     display: none;
-    background:#c0c5ff;
+    background:#a4aeff;
     padding:10px 50px;
     height: auto;
   }
