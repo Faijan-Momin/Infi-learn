@@ -522,9 +522,8 @@ table {
     height: 150px;
 }
 #manageits:hover{
-    transform: scale(5);
+    transform: scale(2);
     background-color: white;
-    font-size: 20px;
     border: 2px solid gray;
     border-radius: 5px;
 
