@@ -141,3 +141,98 @@ function showAdminPanelli(panellink){
         var manage_syllabus = document.getElementById('admin-panel-manage-syllabus').style.display ="block";
     } 
 }
+
+// Show SYllabus
+function showSyllabusContent(syllabusDiv){
+    if(syllabusDiv == "show-syllabus"){
+        document.getElementById('admin-panel-syllabus-show-syllabus').style.display ="block";
+        document.getElementById('admin-panel-syllabus-add-board').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-class').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-subject').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-chapter').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-topic').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-title').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-desc').style.display ="none";
+    }
+}
+
+function showSyllabusContentlist(){
+    var listitem = document.getElementById("syllabus-content").value;
+    if(listitem == "add-board"){
+        document.getElementById('admin-panel-syllabus-show-syllabus').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-board').style.display ="block";
+        document.getElementById('admin-panel-syllabus-add-class').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-subject').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-chapter').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-topic').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-title').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-desc').style.display ="none";
+    }
+    if(listitem == "add-class"){
+        document.getElementById('admin-panel-syllabus-show-syllabus').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-board').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-class').style.display ="block";
+        document.getElementById('admin-panel-syllabus-add-subject').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-chapter').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-topic').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-title').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-desc').style.display ="none";
+    }
+    if(listitem == "add-subject"){
+        document.getElementById('admin-panel-syllabus-show-syllabus').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-board').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-class').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-subject').style.display ="block";
+        document.getElementById('admin-panel-syllabus-add-chapter').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-topic').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-title').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-desc').style.display ="none";
+    }
+    if(listitem == "add-chapter"){
+        document.getElementById('admin-panel-syllabus-show-syllabus').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-board').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-class').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-subject').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-chapter').style.display ="block";
+        document.getElementById('admin-panel-syllabus-add-topic').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-title').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-desc').style.display ="none";
+    }
+    if(listitem == "add-topic"){
+        document.getElementById('admin-panel-syllabus-show-syllabus').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-board').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-class').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-subject').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-chapter').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-topic').style.display ="block";
+        document.getElementById('admin-panel-syllabus-add-title').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-desc').style.display ="none";
+    }
+    if(listitem == "add-title"){
+        document.getElementById('admin-panel-syllabus-show-syllabus').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-board').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-class').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-subject').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-chapter').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-topic').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-title').style.display ="block";
+        document.getElementById('admin-panel-syllabus-add-desc').style.display ="none";
+    }
+    if(listitem == "add-desc"){
+        document.getElementById('admin-panel-syllabus-show-syllabus').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-board').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-class').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-subject').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-chapter').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-topic').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-title').style.display ="none";
+        document.getElementById('admin-panel-syllabus-add-desc').style.display ="block";
+    }
+}
+
+
+
+
+
+
+

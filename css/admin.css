@@ -397,6 +397,121 @@ table {
     width: 100%;
     display: none;
 }
+#admin-panel-syllabus-show-syllabus{display: none;}
+/* #admin-panel-syllabus-add-board{display: none;} */
+#admin-panel-syllabus-add-class{display: none;}
+#admin-panel-syllabus-add-subject{display: none;}
+#admin-panel-syllabus-add-chapter{display: none;}
+#admin-panel-syllabus-add-topic{display: none;}
+#admin-panel-syllabus-add-title{display: none;}
+#admin-panel-syllabus-add-desc{display: none;}
+/* Syllabus Panel */
+.admin-panel-manage-syllabus-show-syllabus-btn-and-drpdwn{
+    padding: 5px 50px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.admin-panel-manage-syllabus-show-syllabus-btn button{
+    height: 35px;
+    width: 140px;
+    border: 2px solid #221638;
+    border-radius: 25px;
+    background-color: #151943;
+    color: white;
+    font-size: 16px;
+    font-family: 'Nunito';
+    cursor: pointer;
+    outline: none;
+}
+.admin-panel-manage-syllabus-show-syllabus-btn button:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.93);
+    background-color: #1b215a;
+}
+.admin-panel-manage-syllabus-show-syllabus-drpdwn select{
+    height: 35px;
+    width: 230px;
+    border: 2px solid #221638;
+    border-radius: 5px;
+    background-color: #151943;
+    color: white;
+    font-size: 16px;
+    font-family: 'Nunito';
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+.admin-panel-manage-syllabus-show-syllabus-drpdwn option{
+    background-color: #2f3791;
+    cursor: pointer;
+}
+.admin-panel-syllabus-content-inputs{
+    padding: 30px 50px;
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+.admin-panel-syllabus-input-content{
+    display:grid;
+    gap: 15px;
+}
+.admin-panel-syllabus-input-content-select{
+    display:grid;
+    gap: 15px;
+}
+.admin-panel-syllabus-input-content-text input{
+    height: 40px;
+    width: 250px;
+    border: 2px solid gray;
+    color: black;
+    background-color: #efe7ff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Nunito';
+    padding: 5px;
+}
+.admin-panel-syllabus-input-content-select select{
+    height: 40px;
+    width: 250px;
+    border: 2px solid gray;
+    color: white;
+    background-color: #221638;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Nunito';
+    cursor: pointer;
+}
+.admin-panel-syllabus-input-content-select option{
+    color: white;
+    background-color: #422b6d;
+    font-size: 18px;
+    font-family: 'Nunito';
+}
+.admin-panel-syllabus-input-content-submit{
+    margin-top: 25px;
+    margin-left: 55px;
+}
+.admin-panel-syllabus-input-content-submit button{
+    height: 40px;
+    width: 130px;
+    background-color: #ff2f3d;
+    color: white;
+    border: 3px solid #fe4a55;
+    border-radius: 25px;
+    font-size: 18px;
+    font-family: 'Nunito';
+    cursor: pointer;
+}
+.admin-panel-syllabus-input-content-submit button:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.93);
+}
+
 /* Collapsible */
 
 .acc-container {
@@ -409,6 +524,7 @@ table {
     overflow: hidden;
     color: white;
   }
+  
   .acc-btn { 
     width:100%;
     margin:0 auto;
@@ -422,7 +538,39 @@ table {
     margin:0 auto;
     display: none;
     background:#151943;
-    padding:10px 90px;
+    padding:10px 50px;
+    height: auto;
+  }
+  .acc-two-btn { 
+    width:100%;
+    margin:0 auto;
+    padding:10px 25px;
+    cursor:pointer;
+    background: #2e3892;
+    border-bottom:1px solid #2d3480;
+  }
+  .acc-two-content {
+    width:100%;
+    margin:0 auto;
+    display: none;
+    background:#6f7bff;
+    padding:10px 50px;
+    height: auto;
+  }
+  .acc-three-btn { 
+    width:100%;
+    margin:0 auto;
+    padding:10px 25px;
+    cursor:pointer;
+    background: #a4aeff;
+    border-bottom:1px solid #2d3480;
+  }
+  .acc-three-content {
+    width:100%;
+    margin:0 auto;
+    display: none;
+    background:#c0c5ff;
+    padding:10px 50px;
     height: auto;
   }
   .acc-content p, .acc-content h3, .acc-content h2 {

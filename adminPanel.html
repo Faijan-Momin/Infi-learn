@@ -856,26 +856,425 @@
                 </div>
                 <!-- Syllabus -->
                 <div id="admin-panel-manage-syllabus" class="admin-dashboard-manage-users">
-                    <div class="acc-container">
-                        <div class="acc-btn"><h3>Topic 1</h3></div>
-                        <div class="acc-content">
-                            <p>Chapter 1</p>
+                    <div class="admin-panel-manage-syllabus-show-syllabus-btn-and-drpdwn">
+                        <div class="admin-panel-manage-syllabus-show-syllabus-btn">
+                            <button onclick="showSyllabusContent('show-syllabus');">Show Syllabus</button>
                         </div>
-                
-                        <div class="acc-btn"><h3>Topic 2</h3></div>
-                        <div class="acc-content">
-                            <p>Chapter 2</p>
+                        <div class="admin-panel-manage-syllabus-show-syllabus-drpdwn">
+                            <select name="add-content" id="syllabus-content" onchange="showSyllabusContentlist();">
+                                <option selected disabled>Select</option>
+                                <option value="add-board">Add Board</option>
+                                <option value="add-class">Add Class</option>
+                                <option value="add-subject">Add Subject</option>
+                                <option value="add-chapter">Add Chapter</option>
+                                <option value="add-topic">Add Topic</option>
+                                <option value="add-title">Add Title</option>
+                                <option value="add-desc">Add Description</option>
+                            </select>
                         </div>
-                
-                        <div class="acc-btn"><h3>Topic 3</h3></div>
-                        <div class="acc-content">
-                            <p>Chapter 3</p>
+                    </div>
+                    <div class="admin-panel-syllabus-all-contents">
+                        <!-- Show Syllabus -->
+                        <div id="admin-panel-syllabus-show-syllabus" class="admin-panel-syllabus-content"> 
+                            <div class="acc-container">
+                                <div class="acc-btn"><h3>English</h3></div>
+                                <div class="acc-content">
+                                    <div class="acc-two-btn"><h3>Chapter 1</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                    <div class="acc-two-btn"><h3>Chapter 2</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                    <div class="acc-two-btn"><h3>Chapter 3</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="acc-btn"><h3>Science</h3></div>
+                                <div class="acc-content">
+                                    <div class="acc-two-btn"><h3>Chapter 1</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                    <div class="acc-two-btn"><h3>Chapter 2</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                    <div class="acc-two-btn"><h3>Chapter 3</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="acc-btn"><h3>Mathematics</h3></div>
+                                <div class="acc-content">
+                                    <div class="acc-two-btn"><h3>Chapter 1</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                    <div class="acc-two-btn"><h3>Chapter 2</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                    <div class="acc-two-btn"><h3>Chapter 3</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                                <div class="acc-btn"><h3>Social Science</h3></div>
+                                <div class="acc-content">
+                                    <div class="acc-two-btn"><h3>Chapter 1</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                    <div class="acc-two-btn"><h3>Chapter 2</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                    <div class="acc-two-btn"><h3>Chapter 3</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="acc-btn"><h3>Marathi</h3></div>
+                                <div class="acc-content">
+                                    <div class="acc-two-btn"><h3>Chapter 1</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                    <div class="acc-two-btn"><h3>Chapter 2</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                    <div class="acc-two-btn"><h3>Chapter 3</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="acc-btn"><h3>Hindi</h3></div>
+                                <div class="acc-content">
+                                    <div class="acc-two-btn"><h3>Chapter 1</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                    <div class="acc-two-btn"><h3>Chapter 2</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                    <div class="acc-two-btn"><h3>Chapter 3</h3></div>
+                                    <div class="acc-two-content">
+                                        <div class="acc-three-btn"><h3>Topic 1</h3></div>
+                                        <div class="acc-three-content">
+                                            <p>Ttile</p>
+                                            <p>Ttile</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                
-                        <div class="acc-btn"><h3>Topic 4</h3></div>
-                        <div class="acc-content">
-                            <p>Chapter 4</p>
+                        <!-- Add Board -->
+                        <div id="admin-panel-syllabus-add-board" class="admin-panel-syllabus-content-inputs"> 
+                            <div class="admin-panel-syllabus-input-content">
+                                <div class="admin-panel-syllabus-input-content-text">
+                                    <input type="text" placeholder="Add Board">
+                                </div>
+                                <div class="admin-panel-syllabus-input-content-submit">
+                                    <button>Submit</button>
+                                </div>
+                            </div>
                         </div>
+                        <!-- Add Class -->
+                        <div id="admin-panel-syllabus-add-class" class="admin-panel-syllabus-content-inputs"> 
+                            <div class="admin-panel-syllabus-input-content">
+                                <div class="admin-panel-syllabus-input-content-select">
+                                    <select name="select-board" id="">
+                                        <option selected disabled>Select Board</option>
+                                        <option value="ssc">ssc</option>
+                                    </select>
+                                </div>
+                                <div class="admin-panel-syllabus-input-content-text">
+                                    <input type="text" placeholder="Add Class">
+                                </div>
+                                <div class="admin-panel-syllabus-input-content-submit">
+                                    <button>Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Subject -->
+                        <div id="admin-panel-syllabus-add-subject" class="admin-panel-syllabus-content-inputs"> 
+                            <div class="admin-panel-syllabus-input-content">
+                                <div class="admin-panel-syllabus-input-content-select">
+                                    <select name="select-board" id="">
+                                        <option selected disabled>Select Board</option>
+                                        <option value="ssc">ssc</option>
+                                    </select>
+                                    <select name="select-class" id="">
+                                        <option selected disabled>Select Class</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                                <div class="admin-panel-syllabus-input-content-text">
+                                    <input type="text" placeholder="Add Subject">
+                                </div>
+                                <div class="admin-panel-syllabus-input-content-submit">
+                                    <button>Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Chapter -->
+                        <div id="admin-panel-syllabus-add-chapter" class="admin-panel-syllabus-content-inputs"> 
+                            <div class="admin-panel-syllabus-input-content">
+                                <div class="admin-panel-syllabus-input-content-select">
+                                    <select name="select-board" id="">
+                                        <option selected disabled>Select Board</option>
+                                        <option value="ssc">ssc</option>
+                                    </select>
+                                    <select name="select-class" id="">
+                                        <option selected disabled>Select Class</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                    <select name="select-subject" id="">
+                                        <option selected disabled>Select Subject</option>
+                                        <option value="English">English</option>
+                                        <option value="Mathematics">Mathematics</option>
+                                        <option value="Science">Science</option>
+                                        <option value="Marathi">Marathi</option>
+                                        <option value="Social-Science">Social Science</option>
+                                        <option value="Hindi">Hindi</option>
+                                    </select>
+                                </div>
+                                <div class="admin-panel-syllabus-input-content-text">
+                                    <input type="text" placeholder="Add Chapter">
+                                </div>
+                                <div class="admin-panel-syllabus-input-content-submit">
+                                    <button>Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Topic -->
+                        <div id="admin-panel-syllabus-add-topic" class="admin-panel-syllabus-content-inputs"> 
+                            <div class="admin-panel-syllabus-input-content">
+                                <div class="admin-panel-syllabus-input-content-select">
+                                    <select name="select-board" id="">
+                                        <option selected disabled>Select Board</option>
+                                        <option value="ssc">ssc</option>
+                                    </select>
+                                    <select name="select-class" id="">
+                                        <option selected disabled>Select Class</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                    <select name="select-subject" id="">
+                                        <option selected disabled>Select Subject</option>
+                                        <option value="English">English</option>
+                                        <option value="Mathematics">Mathematics</option>
+                                        <option value="Science">Science</option>
+                                        <option value="Marathi">Marathi</option>
+                                        <option value="Social-Science">Social Science</option>
+                                        <option value="Hindi">Hindi</option>
+                                    </select>
+                                    <select name="select-chapter" id="">
+                                        <option selected disabled>Select Chapter</option>
+                                        <option value="Chapter-1">Chapter 1</option>
+                                        <option value="Chapter-2">Chapter 2</option>
+                                        <option value="Chapter-3">Chapter 3</option>
+                                        <option value="Chapter-4">Chapter 4</option>
+                                    </select>
+                                </div>
+                                <div class="admin-panel-syllabus-input-content-text">
+                                    <input type="text" placeholder="Add Topic">
+                                </div>
+                                <div class="admin-panel-syllabus-input-content-submit">
+                                    <button>Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Title -->
+                        <div id="admin-panel-syllabus-add-title" class="admin-panel-syllabus-content-inputs"> 
+                            <div class="admin-panel-syllabus-input-content">
+                                <div class="admin-panel-syllabus-input-content-select">
+                                    <select name="select-board" id="">
+                                        <option selected disabled>Select Board</option>
+                                        <option value="ssc">ssc</option>
+                                    </select>
+                                    <select name="select-class" id="">
+                                        <option selected disabled>Select Class</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                    <select name="select-subject" id="">
+                                        <option selected disabled>Select Subject</option>
+                                        <option value="English">English</option>
+                                        <option value="Mathematics">Mathematics</option>
+                                        <option value="Science">Science</option>
+                                        <option value="Marathi">Marathi</option>
+                                        <option value="Social-Science">Social Science</option>
+                                        <option value="Hindi">Hindi</option>
+                                    </select>
+                                    <select name="select-chapter" id="">
+                                        <option selected disabled>Select Chapter</option>
+                                        <option value="Chapter-1">Chapter 1</option>
+                                        <option value="Chapter-2">Chapter 2</option>
+                                        <option value="Chapter-3">Chapter 3</option>
+                                        <option value="Chapter-4">Chapter 4</option>
+                                    </select>
+                                    <select name="select-topic" id="">
+                                        <option selected disabled>Select Topic</option>
+                                        <option value="Topic-1">Topic 1</option>
+                                        <option value="Topic-2">Topic 2</option>
+                                        <option value="Topic-3">Topic 3</option>
+                                        <option value="Topic-4">Topic 4</option>
+                                    </select>
+                                </div>
+                                <div class="admin-panel-syllabus-input-content-text">
+                                    <input type="text" placeholder="Add Title">
+                                </div>
+                                <div class="admin-panel-syllabus-input-content-submit">
+                                    <button>Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Description -->
+                        <div id="admin-panel-syllabus-add-desc" class="admin-panel-syllabus-content-inputs"> 
+                            <div class="admin-panel-syllabus-input-content">
+                                <div class="admin-panel-syllabus-input-content-select">
+                                    <select name="select-board" id="">
+                                        <option selected disabled>Select Board</option>
+                                        <option value="ssc">ssc</option>
+                                    </select>
+                                    <select name="select-class" id="">
+                                        <option selected disabled>Select Class</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                    <select name="select-subject" id="">
+                                        <option selected disabled>Select Subject</option>
+                                        <option value="English">English</option>
+                                        <option value="Mathematics">Mathematics</option>
+                                        <option value="Science">Science</option>
+                                        <option value="Marathi">Marathi</option>
+                                        <option value="Social-Science">Social Science</option>
+                                        <option value="Hindi">Hindi</option>
+                                    </select>
+                                    <select name="select-chapter" id="">
+                                        <option selected disabled>Select Chapter</option>
+                                        <option value="Chapter-1">Chapter 1</option>
+                                        <option value="Chapter-2">Chapter 2</option>
+                                        <option value="Chapter-3">Chapter 3</option>
+                                        <option value="Chapter-4">Chapter 4</option>
+                                    </select>
+                                    <select name="select-topic" id="">
+                                        <option selected disabled>Select Topic</option>
+                                        <option value="Topic-1">Topic 1</option>
+                                        <option value="Topic-2">Topic 2</option>
+                                        <option value="Topic-3">Topic 3</option>
+                                        <option value="Topic-4">Topic 4</option>
+                                    </select>
+                                    <select name="select-title" id="">
+                                        <option selected disabled>Select Title</option>
+                                        <option value="Title-1">Title 1</option>
+                                        <option value="Title-2">Title 2</option>
+                                        <option value="Title-3">Title 3</option>
+                                        <option value="Title-4">Title 4</option>
+                                    </select>
+                                </div>
+                                <div class="admin-panel-syllabus-input-content-text">
+                                    <input type="text" placeholder="Add Description">
+                                </div>
+                                <div class="admin-panel-syllabus-input-content-submit">
+                                    <button>Submit</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
                     </div>
                 </div>
 
@@ -1395,6 +1794,8 @@
                 event.preventDefault();
             });
         });
+
+        // Collapsible Main
         $('.acc-btn').click(function(){
             if ( $(this).next().is( ":hidden" ) ) {
             $('.acc-content').slideUp('selected');
@@ -1404,7 +1805,26 @@
             };
         });
 
-
+        // For Chapters
+        $('.acc-two-btn').click(function(){
+            if ( $(this).next().is( ":hidden" ) ) {
+            $('.acc-two-content').slideUp('selected');
+            $(this).next().slideDown('selected');
+            } else {
+            $(this).next().slideUp('selected');
+            };
+        });
+        
+        // For Topics
+        $('.acc-three-btn').click(function(){
+            if ( $(this).next().is( ":hidden" ) ) {
+            $('.acc-three-content').slideUp('selected');
+            $(this).next().slideDown('selected');
+            } else {
+            $(this).next().slideUp('selected');
+            };
+        });
+        acc-three-btn
     </script>
 </body>
 </html>
