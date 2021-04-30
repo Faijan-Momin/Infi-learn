@@ -523,6 +523,8 @@ table {
     border-radius:5px;
     overflow: hidden;
     color: white;
+    font-size: 15px;
+    font-family: 'Nunito';
   }
   
   .acc-btn { 
