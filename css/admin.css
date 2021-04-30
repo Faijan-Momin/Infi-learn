@@ -38,7 +38,7 @@
     margin-bottom: 25px;
 }
 .admin-dashboard-nav-links{
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.3);
     font-size: 18px;
     font-family: 'Nunito';
     cursor: pointer;
@@ -248,7 +248,7 @@ table {
     border-radius: 5px;
 }
 .admin-table-action-btns-manage-req button:nth-child(1){
-    background-color: #2d6ab9;
+    background-color: #32b92d;
 }
 .admin-table-action-btns-manage-req button:nth-child(2){
     background-color: #fe4a55;
