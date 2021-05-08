@@ -1836,6 +1836,17 @@ input[type='radio']:checked:after {
 #teacher-description-box{
     height: 200px;
     width: 420px;
+    resize: none;
+    background-color: white;
+    border: 1px solid #adadad;
+    border-radius: 5px;
+    margin: 8px;
+    padding: 5px 7px;
+    color: black;
+    outline: none;
+    font-size: 17px;
+    font-family: 'Nunito';
+    letter-spacing: 1px;
 }
 .teacher-dashboard-subject-upload-video-submit-data{
     display: block;
@@ -1905,4 +1916,159 @@ input[type='radio']:checked:after {
      margin-top: 15px;
  }
 
- /*  */
+ /* Verification Pages */
+ .verification-pages-section{
+     width: 100%;
+     height: 100%;
+     background-color: #f9f9f9;
+ }
+ .verification-page-section-div{
+     height: inherit;
+     width: inherit;
+     display: flex;
+     margin: auto;
+     justify-content: center;
+     align-items: center;
+ }
+ .verification-page-box{
+     height: 530px;
+     width: 500px;
+     display: grid;
+     grid-template-rows: auto auto;
+     margin: auto;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+     background-color: white;
+     box-shadow: #888888 0px 1px 4px;
+     border-radius: 5px;
+ }
+ .verification-page-logo{
+     height: 100%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .verification-page-logo-img{
+     height: 200px;
+     width: 200px;
+     background-image: url('../content/icons/admin/email-verification.svg');
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: contain;
+ }
+ .verification-page-info-stuff{
+     width: 100%;
+     margin: auto;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+ }
+ #verification-page-info-stuffs{
+    display: block;
+ }
+ #verification-page-send-email-msg{
+    display: none;
+    width: 100%;
+    height: 300px;
+    color: black;
+ }
+ .verification-page-info-stuff-send-email-msg{
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+ }
+ .verification-page-info-stuff-desc{
+     padding: 10px 25px;
+ }
+ .verification-page-info-stuff-desc h2{
+     margin: 5px 0px;
+     color: black;
+     font-size: 24px;
+     font-family: 'Lora';
+     font-weight: 600;
+ }
+ .verification-page-info-stuff-desc p{
+    margin: 10px 0px;
+    color: grey;
+    font-size: 15px;
+    font-family: 'Nunito';
+    font-weight: 500;
+}
+.verification-page-info-stuff-inputs{
+    width: 100%;
+}
+.verification-page-info-stuff-input-email{
+    padding: 10px;
+}
+.verification-page-info-stuff-input-email input{
+    height: 40px;
+    width: 80%;
+    background-color: #ffecee;
+    border: 1px solid #fe4a55;
+    color: black;
+    border-radius: 5px;
+    padding: 3px 7px;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+}
+.verification-page-info-stuff-input-email input:focus{
+    background-color: #f6f1ff;
+    border: 1px solid #211638;
+}
+.verification-page-info-stuff-input-submit{
+    padding: 10px;
+}
+.verification-page-info-stuff-input-submit input{
+    height: 40px;
+    width: 65%;
+    background-color: #211638;
+    color: white;
+    border: 1px solid #442b7a;
+    border-radius: 5px;
+    padding: 3px 7px;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Nunito';
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.verification-page-info-stuff-input-submit input:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.92);
+    background-color: #332455;
+}
+.verf-redirect-msg{
+    margin-top: 100px;
+}
+/* OTP  PAge*/
+#otp_number_input::-webkit-outer-spin-button,#otp_number_input::-webkit-inner-spin-button {
+  display: none;
+}
+.verification-page-info-stuff-input-resend-code{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 13%;
+}
+.verification-page-info-stuff-input-resend-code a{
+    color: #fe4a55;
+    font-size: 16px;
+    font-family: 'Nunito';
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+.verification-page-info-stuff-input-resend-code a:hover{
+    color: #bb000c;
+}
+#verification-page-info-verify-otp{
+    display: block;
+}
+#verification-page-send-email-msgs{
+    display: none;
+}

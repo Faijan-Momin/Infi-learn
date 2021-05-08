@@ -245,9 +245,36 @@ function showSyllabusContentlist(){
     }
 }
 
+// Validate EMail
+function ValidateEmail(inputText){
+    var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if(inputText.value.match(mailformat)){
+        // alert("Valid email address!");
+        document.forgot_email_form.forgot_email.focus();
+        document.getElementById('forgot-email-input').style.backgroundColor = "#f6f1ff";
+        showEmailSendDiv();
+        return true;
+    }
+    else{
+        // alert("You have entered an invalid email address!");
+        document.forgot_email_form.forgot_email.focus();
+        document.getElementById('forgot-email-input').placeholder='Please Enter Your Email!';
+        document.getElementById('forgot-email-input').style.backgroundColor = "#ffecee";
+        return false;
+    }
+}
+ function showEmailSendDiv(){
+     document.getElementById('verification-page-info-stuffs').style.display = "none";
+     document.getElementById('verification-page-send-email-msg').style.display = "block";
+     window.setTimeout(() => {
+         window.location.replace('verifyotp.html');
+     }, 9000);
+ }
 
-
-
-
-
-
+ function VerifyOtpRedirect(){
+    document.getElementById('verification-page-info-verify-otp').style.display = "none";
+    document.getElementById('verification-page-send-email-msgs').style.display = "block";
+    // window.setTimeout(() => {
+    //     //window.location.replace('');
+    // }, 9000);
+}

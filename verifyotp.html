@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Infilearn</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <section class="verification-pages-section">
+        <div class="verification-page-section-div">
+            <div class="verification-page-box">
+                <div class="verification-page-logo">
+                    <div class="verification-page-logo-img">
+                        <!-- Image Here -->
+                    </div>
+                </div>
+                <div id="verification-page-info-verify-otp"  class="verification-page-info-stuff">
+                    <div class="verification-page-info-stuff-desc">
+                        <h2>Email Verification</h2>
+                        <p>Please enter the register email id,<br> Where we can send the link to reset your password</p>
+                    </div>
+                    <div class="verification-page-info-stuff-inputs">
+                        <form name="email_verification_form" action="#">
+                            <div class="verification-page-info-stuff-input-email">
+                                <input id="otp_number_input" type="number" name="verify_otp" placeholder="Enter OTP" id="forgot-email-input" maxlength="6" minlength="6" required>
+                            </div>
+                            <div class="verification-page-info-stuff-input-resend-code">
+                                <a href="#">Resend Code</a>
+                            </div>
+                            <div class="verification-page-info-stuff-input-submit">
+                                <input type="submit" value="Proceed" onclick="VerifyOtpRedirect()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="verification-page-send-email-msgs" class="verification-page-info-stuff-send-email-msg">
+                    <div class="verification-page-info-stuff-desc">
+                        <h2>Congratulations</h2>
+                        <p>Now you can change your password :)</p>
+                        <p id="verf-redirect-msg">Wait... we will redirect you in a moment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script>
+        $(document).ready(function() {
+            $("input[type=number]").on("focus", function() {
+                $(this).on("keydown", function(event) {
+                    if (event.keyCode === 38 || event.keyCode === 40) {
+                        event.preventDefault();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
