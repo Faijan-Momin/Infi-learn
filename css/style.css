@@ -169,7 +169,7 @@ header{
     }
     .desktop-header{
         display: grid;
-        grid-template-columns: 20%  45% 35%;
+        grid-template-columns: 20% 40% 35%;
     }
     #mobile-hamburger-icon{
         display: block;
@@ -458,7 +458,7 @@ footer{
     }
     .footer-contact-us-links{
         text-align: left;
-        margin-left: 50px;
+        margin-left: 35px;
     }
     .footer-contact-us-links a{
         font-size: 18px;
