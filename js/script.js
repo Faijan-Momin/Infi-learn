@@ -1,3 +1,18 @@
+
+    function showMobileNav() {
+        var navBar = document.getElementById('mobile-navbar-slide');
+        var hambrgr = document.getElementsByClassName("hamburger")[0];
+        if(navBar.style.left == "0%"){
+            navBar.style.left = "-90%";
+            hambrgr.classList.remove('is-active');
+        }
+        else{
+            navBar.style.left = "0%";
+            hambrgr.classList.add('is-active');
+        }
+    }
+
+    
 function ModalShow(){
     document.getElementById("modal").style.zIndex = "3";
     window.location.href = "#modal";
@@ -278,3 +293,6 @@ function ValidateEmail(inputText){
     //     //window.location.replace('');
     // }, 9000);
 }
+
+
+
