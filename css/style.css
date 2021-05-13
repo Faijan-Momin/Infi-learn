@@ -2063,7 +2063,7 @@ input[type='radio']:checked:after {
         transition: left ease-in-out 500ms;
     }
     .subject-content-navigation-bar{
-        width: 90%;
+        width: 88%;
         z-index: 2;
     }
 }
@@ -2250,7 +2250,7 @@ input[type='radio']:checked:after {
     }
     .subject-dashboard-content-section-chapter-single-video{
         height: fit-content;
-        width: 88%;
+        width: 90%;
         display: block;
         padding: 10px;
         border: 1px solid gray;
@@ -2380,7 +2380,101 @@ input[type='radio']:checked:after {
     text-align: center;
 }
 @media only screen and (max-width:450px){
+    .select-subject-desktop-header{
+        display: flex;
+    }
+    .select-subject-desktop-logo{
+        width: 230px;
+        padding-left: 100px;
+    }
     
+    .select-subject-dashboard-header-profile{
+        padding: 10px 10px 10px 10px;
+    }
+    .select-subject-dashboard-header-profile-box{
+        position: absolute;
+        right: 50px;
+        display: flex;
+    
+    }
+    .select-subject-dashboard-header-profile p{
+        color: black;
+        font-size: 16px;
+        font-family: 'Nunito';
+        font-weight: 300;
+        margin: 10px 0px;
+    }
+    .select-subject-dashboard-profile-dp{
+        height: 35px;
+        width: 35px;
+        background-color: #979797;
+        margin: 4px 15px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .select-subject-dashboard-profile-dp img{
+        border-radius: 50%;
+    }
+    .select-subject-section{
+        padding: 60px 0px;
+        background-color: #f2f2f2;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .select-subject-div{
+        padding-top: 20px;
+    }
+    .select-subject-div-title h2{
+        color: #fe4a55;
+        font-size: 28px;
+        font-family: 'Lora';
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .select-subject-div-all-subjects{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap:50px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .select-subject-single-sub{
+        position: relative;
+        height:35vh;
+        width: 36vh;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: #666 0px 2px 12px -5px;
+        text-align: center;
+        padding: auto;
+        cursor: pointer;
+    }
+    .select-subject-single-sub:hover{
+        transition: 300ms ease-in-out;
+        transform: scale(0.95);
+    }
+    
+    .select-subject-img{
+        margin: 30px;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+        width: 200px;
+    }
+    .selec-subject-div-subject-name h3{
+        color: black;
+        font-size: 24px;
+        font-family: 'Nunito';
+        text-align: center;
+    }
 }
 /* Subject video Page */
 .chapter-video-page-desktop-header{
@@ -2440,6 +2534,8 @@ input[type='radio']:checked:after {
     bottom: 10px;
     left: 15px;
 }
+
+
 /* Dashboard Suject content */
 
 #teacher-sec-back-btn{
