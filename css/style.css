@@ -2422,7 +2422,8 @@ input[type='radio']:checked:after {
     }
     .select-subject-img{
         margin: 15px 0px;
-        width: 200px;
+        width: 100%;
+        text-align: center;
     }
     .select-subject-img img{
         height: 90px;
