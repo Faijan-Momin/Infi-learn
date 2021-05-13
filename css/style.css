@@ -2950,6 +2950,58 @@ input[type='radio']:checked:after {
 .verf-redirect-msg{
     margin-top: 100px;
 }
+#verification-page-verify-otp-mesg{
+    display: none;
+}
+@media only screen and (max-width:450px){
+    .verification-pages-section{
+        padding: 10px;
+        padding-top: 30px;
+        width: 95%;
+        height: fit-content;
+    }
+    .verification-page-section-div{
+        height: fit-content;
+        width: fit-content;
+    }
+    .verification-page-box{
+        height: fit-content;
+        width: fit-content;
+    }
+    .verification-page-logo-img{
+        height: 90px;
+        width: 90px;
+    }
+
+    .verification-page-info-stuff-desc{
+        padding: 10px 15px;
+    }
+    .verification-page-info-stuff-desc h2{
+        font-size: 20px;
+    }
+   .verification-page-info-stuff-inputs{
+       width: 100%;
+   }
+   .verification-page-info-stuff-input-email{
+       padding: 15px 0px;
+       width: 100%;
+   }
+   .verification-page-info-stuff-input-email input{
+       height: 40px;
+       width: 90%;
+   }
+   .verification-page-info-stuff-input-email input:focus{
+       background-color: #f6f1ff;
+       border: 1px solid #211638;
+   }
+   .verification-page-info-stuff-input-submit{
+       padding: 0px;
+   }
+   .verification-page-info-stuff-input-submit input{
+       width: 80%;
+   }
+}
+
 /* OTP  PAge*/
 #otp_number_input::-webkit-outer-spin-button,#otp_number_input::-webkit-inner-spin-button {
   display: none;
@@ -2975,4 +3027,10 @@ input[type='radio']:checked:after {
 }
 #verification-page-send-email-msgs{
     display: none;
+}
+
+@media only screen and (max-width:450px){
+    .verification-page-info-stuff-input-resend-code{
+        margin: 2% 6% 5% 0%;
+    }
 }

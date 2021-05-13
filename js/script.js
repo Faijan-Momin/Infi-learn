@@ -310,7 +310,7 @@ function ValidateEmail(inputText){
 }
  function showEmailSendDiv(){
      document.getElementById('verification-page-info-stuffs').style.display = "none";
-     document.getElementById('verification-page-send-email-msg').style.display = "block";
+     document.getElementById('verification-page-verify-otp-mesg').style.display = "block";
      window.setTimeout(() => {
          window.location.replace('verifyotp.html');
      }, 9000);
