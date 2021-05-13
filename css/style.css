@@ -2384,37 +2384,18 @@ input[type='radio']:checked:after {
         display: flex;
     }
     .select-subject-desktop-logo{
-        width: 230px;
-        padding-left: 100px;
+        width: auto;
+        padding-left: 10px;
     }
-    
     .select-subject-dashboard-header-profile{
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
     }
     .select-subject-dashboard-header-profile-box{
-        position: absolute;
-        right: 50px;
-        display: flex;
-    
+        right: 10px;
     }
     .select-subject-dashboard-header-profile p{
-        color: black;
-        font-size: 16px;
-        font-family: 'Nunito';
-        font-weight: 300;
-        margin: 10px 0px;
-    }
-    .select-subject-dashboard-profile-dp{
-        height: 35px;
-        width: 35px;
-        background-color: #979797;
-        margin: 4px 15px;
-        border: none;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-    .select-subject-dashboard-profile-dp img{
-        border-radius: 50%;
+        font-size: 15px;
+        margin: 12px 0px;
     }
     .select-subject-section{
         padding: 60px 0px;
@@ -2423,59 +2404,34 @@ input[type='radio']:checked:after {
         margin: auto;
         justify-content: center;
         align-items: center;
-    
     }
     .select-subject-div{
-        padding-top: 20px;
+        padding-top: 10px;
     }
     .select-subject-div-title h2{
-        color: #fe4a55;
-        font-size: 28px;
-        font-family: 'Lora';
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 50px;
+        font-size: 22px;
+        margin-bottom: 20px;
     }
     .select-subject-div-all-subjects{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        gap:50px;
-        margin: auto;
-        justify-content: center;
-        align-items: center;
+        grid-template-columns: auto;
+        gap:25px;
     }
     .select-subject-single-sub{
-        position: relative;
-        height:35vh;
-        width: 36vh;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        border-radius: 5px;
-        background-color: white;
-        box-shadow: #666 0px 2px 12px -5px;
-        text-align: center;
-        padding: auto;
-        cursor: pointer;
+        height:28vh;
+        width: 31vh;
     }
-    .select-subject-single-sub:hover{
-        transition: 300ms ease-in-out;
-        transform: scale(0.95);
-    }
-    
     .select-subject-img{
-        margin: 30px;
-        justify-content: center;
-        align-items: center;
-        pointer-events: none;
+        margin: 15px 0px;
         width: 200px;
     }
+    .select-subject-img img{
+        height: 90px;
+    }
     .selec-subject-div-subject-name h3{
-        color: black;
-        font-size: 24px;
-        font-family: 'Nunito';
-        text-align: center;
+        font-size: 20px;
     }
 }
+
 /* Subject video Page */
 .chapter-video-page-desktop-header{
     display: flex;
