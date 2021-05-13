@@ -12,7 +12,23 @@
         }
     }
 
-    
+    // Subject Dashboard NAvigation Mobile
+
+    function showMobileDashboardNav() {
+        var navBar = document.getElementById('subject-content-navigation-bar');
+        var hambrgr = document.getElementsByClassName("hamburger")[0];
+        if(navBar.style.left == "0%"){
+            navBar.style.left = "-100%";
+            hambrgr.classList.remove('is-active');
+        }
+        else{
+            navBar.style.left = "0%";
+            hambrgr.classList.add('is-active');
+        }
+    }
+
+
+
 function ModalShow(){
     document.getElementById("modal").style.zIndex = "3";
     window.location.href = "#modal";

@@ -3,13 +3,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Infilearn</title>
+    <meta name="theme-color" content="#fe4a55">
+    <title>Video Content | Infilearn</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
 </head>
 <body>
     <header>
         <div class="subject-dashboard-header-desktop">
+            <div id="mobile-hamburger-icon" class="mobile-hamburger-icon" >
+                <div id="subject-dashboard-hamburger" class="hamburger-mobile col" onclick="showMobileDashboardNav()">
+                    <div class="hamburger" id="hamburger-3">
+                      <span class="line"></span>
+                      <span class="line"></span>
+                      <span class="line"></span>
+                    </div>
+                </div>
+            </div>
             <div class="subject-dashboard-header-title">
                 <a href="index.html">
                     <img class="infilearn-logo" src="content/icons/new.png" alt="Infilearn Logo" height="60px">
@@ -39,7 +49,7 @@
     <section class="subject-dashboad-content">
         <div class="subject-dashboard-content-div">
             <!-- Subject navigation Bar -->
-            <div class="subject-content-navigation-bar">
+            <div id="subject-content-navigation-bar" class="subject-content-navigation-bar">
                 <div class="subject-dashboard-nav-class-and-subject-name">
                     <button onclick="window.location.assign('selectSubject.html');"><img src="content/icons/arrow-btn.svg" alt="back button" class="section-video-player-back-btn-img" height="16px" ></button>
                     <h2 class="subject-dashboard-nav-class-name">1st Standard</h2>
@@ -143,10 +153,10 @@
                     </div>
                     <div class="subject-dashboard-content-section-chapter-title-info">
                         <h2>1.0 Android and their tools</h2>
-                        <p class="subject-dashboard-content-section-chapter-title-info-p">This is helpful sub description</p>
+                        <!-- <p class="subject-dashboard-content-section-chapter-title-info-p">This is helpful sub description</p> -->
                         <div class="subject-dashboard-content-section-chapter-title-info-topics-and-duration">
                             <p>Topic: 40</p>
-                            <p>Duration: 3hrs</p>
+                            <!-- <p>Duration: 4hrs</p> -->
                         </div>
                     </div>
                 </div>
@@ -164,7 +174,7 @@
                             </div>
                             <div class="subject-dashboard-content-section-chapter-single-vid-title-desc">
                                 <h2 class="subject-dashboard-content-section-chapter-single-vid-title-desc-h2">Native Libraries</h2>
-                                <p>This Course is for rails newbies and anyone looking to get a solid
+                                <p class="single-video-thumbnail-desc">This Course is for rails newbies and anyone looking to get a solid
                                     foundation. It's designed to teach you everything you need to start 
                                     building web applications in Rails right away.
                                 </p>
@@ -181,7 +191,7 @@
                             </div>
                             <div class="subject-dashboard-content-section-chapter-single-vid-title-desc">
                                 <h2 class="subject-dashboard-content-section-chapter-single-vid-title-desc-h2">Android Native Libraries and their use</h2>
-                                <p>This Course is for rails newbies and anyone looking to get a solid
+                                <p class="single-video-thumbnail-desc">This Course is for rails newbies and anyone looking to get a solid
                                     foundation. It's designed to teach you everything you need to start 
                                     building web applications in Rails right away.
                                 </p>
@@ -198,7 +208,7 @@
                             </div>
                             <div class="subject-dashboard-content-section-chapter-single-vid-title-desc">
                                 <h2 class="subject-dashboard-content-section-chapter-single-vid-title-desc-h2">Native Libraries</h2>
-                                <p>This Course is for rails newbies and anyone looking to get a solid
+                                <p class="single-video-thumbnail-desc">This Course is for rails newbies and anyone looking to get a solid
                                     foundation. It's designed to teach you everything you need to start 
                                     building web applications in Rails right away.
                                 </p>
@@ -224,6 +234,12 @@
                 event.preventDefault();
             });
         });
+// Hamburger Animatiom
+        $(document).ready(function(){
+        $(".hamburger").click(function(){
+            $(this).toggleClass("is-active");
+        });
+    });
 
     </script>
 </body>
