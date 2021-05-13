@@ -2962,11 +2962,11 @@ input[type='radio']:checked:after {
     }
     .verification-page-section-div{
         height: fit-content;
-        width: fit-content;
+        width: 100%;
     }
     .verification-page-box{
         height: fit-content;
-        width: fit-content;
+        width: 80%;
     }
     .verification-page-logo-img{
         height: 90px;
@@ -3032,5 +3032,30 @@ input[type='radio']:checked:after {
 @media only screen and (max-width:450px){
     .verification-page-info-stuff-input-resend-code{
         margin: 2% 6% 5% 0%;
+    }
+}
+
+/* New Password */
+.verification-page-logo-img-newpass{
+    height: 200px;
+    width: 200px;
+    background-image: url('../content/icons/admin/rotation-lock.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#new-password-input,#confirm-password-input{
+    width: 100%;
+}
+#password-changed-mesg{
+    display: none;
+}
+@media only screen and (max-width:450px){
+    .verification-page-logo-img-newpass{
+        height: 90px;
+        width: 90px;
+    }
+    #new-password-input,#confirm-password-input{
+        width: 100%;
     }
 }

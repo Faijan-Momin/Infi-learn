@@ -317,12 +317,22 @@ function ValidateEmail(inputText){
  }
 
  function VerifyOtpRedirect(){
-    document.getElementById('verification-page-info-verify-otp').style.display = "none";
+    document.getElementById('verification-page-info-verify-otps').style.display = "none";
     document.getElementById('verification-page-send-email-msgs').style.display = "block";
-    // window.setTimeout(() => {
-    //     //window.location.replace('');
-    // }, 9000);
+    window.setTimeout(() => {
+        window.location.replace('newpassword.html');
+    }, 9000);
 }
+
+function SuccesfullPassChanged(){
+    document.getElementById('change-password-input-stuff').style.display = "none";
+    document.getElementById('password-changed-mesg').style.display = "block";
+    window.setTimeout(() => {
+        window.location.replace('index.html');
+    }, 9000);
+}
+
+
 
 
 
