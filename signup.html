@@ -5,16 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | InfiLearn</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header>
         <div class="desktop-header">
+            <div id="mobile-hamburger-icon" class="mobile-hamburger-icon" >
+                <div class="hamburger-mobile col" onclick="showMobileNav()">
+                    <div class="hamburger" id="hamburger-3">
+                      <span class="line"></span>
+                      <span class="line"></span>
+                      <span class="line"></span>
+                    </div>
+                </div>
+            </div>
             <div class="desktop-logo">
                 <a href="index.html">
                     <img class="infilearn-logo" src="content/icons/new.png" alt="Infilearn Logo" height="60px">
                 </a>            </div>
-            <div class="desktop-navigation-bar">
+            <div id="mobile-navbar-slide" class="desktop-navigation-bar">
                 <ul class="desktop-navbar-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Features</a></li>
@@ -331,5 +340,15 @@
         </div>
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js" integrity="sha512-6ORWJX/LrnSjBzwefdNUyLCMTIsGoNP6NftMy2UAm1JBm6PRZCO1d7OHBStWpVFZLO+RerTvqX/Z9mBFfCJZ4A==" crossorigin="anonymous"></script>
+
+  <script>
+           $(document).ready(function(){
+        $(".hamburger").click(function(){
+            $(this).toggleClass("is-active");
+        });
+    });
+  </script>
 </body>
 </html>

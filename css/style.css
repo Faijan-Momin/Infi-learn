@@ -1264,14 +1264,14 @@ footer{
     background-color: #ffebed;
 }
 .signup-div-box{
-    height: 85%;
+    height: fit-content;
     width: 100%;
     background-color: white;
     display: flex;
     overflow: hidden;
 }
 .signup-box-branding{
-    height: 100%;
+    height:fit-content;
     width: 300px;
     background-color: #fe4a55;
     padding: 2%;
@@ -1316,7 +1316,41 @@ footer{
     position: relative;
     bottom: 80px;
 }
-
+@media only screen and (max-width:450px){ 
+    .signup-section{
+        padding-top: 70px;
+    }
+    .signup-div{
+        padding: 15px;
+    }
+    .signup-div-box{
+        height: fit-content;
+        display: block;
+        overflow:visible;
+    }
+    .signup-box-branding{
+        height: fit-content;
+        width: auto;
+        padding: 10px;
+    }
+    .signup-box-branding-title h2{
+        font-size: 26px;
+        margin: 10px 0px 0px 0px;
+    }
+    .signup-box-branding-welcome h3{
+        font-size: 20px;
+        margin: 5px 0px;
+    }
+    .signup-box-branding-welcome h2{
+        font-size: 20px;
+        margin: 10px 0px 20px 0px;
+    }
+    .signup-box-phone-img{
+        height: 150px;
+        position: unset;
+        bottom: 0px;
+    }
+}
 /* Signup Box Inputs */
 .signup-box-inputs{
     padding: 2%;
@@ -1330,10 +1364,8 @@ footer{
     color: #221638;
     font-size: 30px;
     font-weight: 200;
-    margin-top: 35px;
     margin-top: 5px;
     font-family: 'Lora';
-
 }
 .signup-box-all-inputs{
     margin: auto;
@@ -1454,6 +1486,12 @@ input[type='radio']:checked:after {
     font-family: 'Nunito';
     border: none;
     border-radius: 4px;
+    cursor: pointer;
+}
+.signup-form-submit-btn:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.94);
+    background-color: #211638;
 }
 .login-modal-link{
     padding-top: 10px;
@@ -1470,7 +1508,71 @@ input[type='radio']:checked:after {
     font-family: 'Nunito';
     cursor: pointer;
 }
-
+.login-modal-link a:hover{
+    color: #211638;
+}
+@media only screen and (max-width:450px){
+    .signup-box-inputs{
+        padding: 15px;
+        height: fit-content;
+        width: 100%;
+    }
+    .signup-box-input-title{
+        padding: 0px 2px;
+    }
+    .signup-box-input-title h3{
+        font-size: 26px;
+    } 
+    .signup-box-all-inputs{
+        margin: 0px;
+        justify-content: unset;
+        align-items: unset;
+    }
+    .signup-box-input-boxs{
+        display: block;
+        gap: 0px;
+        padding-left: 2px;
+    }
+    .signup-box-input-boxs label{
+        font-size: 13px;
+    }
+    .signup-input{
+        height: 35px;
+        width: 90%;
+        padding: 3px 5px;
+        font-size: 14px;
+    }   
+    .signup-inputs{
+        width: fit-content;
+        padding: 3px 7px;
+        font-size: 14px;
+        margin-right: 25px;
+    }
+    .signupbox-gender{
+        margin-left: 0px;
+    }
+    .signup-form-submit-button{
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px 0px 0px;
+        margin-left: -40px;
+    }
+    .signup-form-submit-btn{
+        width: 70%;
+    }
+    .login-modal-link{
+        padding-left: 0px;
+        text-align: center;
+        width: 90%;
+    }
+    .login-modal-link p{
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 16px;
+        font-family: 'Nunito';
+    }
+}
 
 /* Login Modal */
 #modal{
@@ -1567,6 +1669,7 @@ input[type='radio']:checked:after {
   background-color: #ffebed;
   font-family: 'Nunito';
 }
+
 .modal-submit-forgot{
   display: flex;
   gap: 6%;
@@ -1574,7 +1677,7 @@ input[type='radio']:checked:after {
 }
 .login-modal-btn{
   height: 35px;
-  width: 180px;
+  width: 50%;
   background-color: #fe4a55;
   color: white;
   cursor: pointer;
@@ -1583,6 +1686,11 @@ input[type='radio']:checked:after {
   border: none;
   border-radius: 4px;
 }
+.login-modal-btn:hover{
+    transition: 300ms ease-in-out;
+    transform: scale(0.94);
+    background-color: #211638;
+}
 .modal-submit-forgot a{
   font-size: 15px;
   color: #fe4a55;
@@ -1590,6 +1698,9 @@ input[type='radio']:checked:after {
   text-decoration: none;
   font-family: 'Nunito';
   cursor: pointer;
+}
+.modal-submit-forgot a:hover{
+    color: #211638;
 }
 .login-modal-hr{
   width: 90%;
@@ -1614,8 +1725,45 @@ input[type='radio']:checked:after {
   font-size: 17px;
   font-family: 'Nunito';
   cursor: pointer;
+  text-decoration: none;
 }
-
+.modal-signup-page-link a:hover{
+    color: #211638;
+}
+@media only screen and (max-width:450px){
+    .modal-content {
+        height: fit-content;
+        width: 90%;
+    }
+    .modal-area {
+        padding:15px;
+    }
+    .modal-input label{
+        font-size: 13px;
+    }
+    .modal-input input{
+        padding: 3px 5px;
+        font-size: 14px;
+    }
+    .modal-submit-forgot{
+        display: flex;
+        gap: 6%;
+        margin: 15px 0px 15px 0px;
+    }
+    .modal-submit-forgot a{
+        font-size: 14px;
+        margin-top: 8px;
+    }
+    .modal-signup-page-link{
+        margin-top: 25px;
+    }
+    .modal-signup-page-link p{
+        font-size: 16px;
+    }
+    .modal-signup-page-link a{
+        font-size: 16px;
+    }
+}
 /* subject DashBoard */
 .subject-dashboard-header-desktop{
     display: grid;
