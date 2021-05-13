@@ -27,6 +27,20 @@
         }
     }
 
+     // Subject Dashboard NAvigation Mobile -Teacher Dashboard
+
+     function showMobileDashboardNavTeacher() {
+        var navBar = document.getElementById('teacher-dashboard-content-navigation-bar');
+        var hambrgr = document.getElementsByClassName("hamburger")[0];
+        if(navBar.style.left == "0%"){
+            navBar.style.left = "-100%";
+            hambrgr.classList.remove('is-active');
+        }
+        else{
+            navBar.style.left = "0%";
+            hambrgr.classList.add('is-active');
+        }
+    }
 
 
 function ModalShow(){

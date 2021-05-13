@@ -10,6 +10,15 @@
 <body>
     <header>
         <div class="subject-dashboard-header-desktop">
+            <div id="mobile-hamburger-icon" class="mobile-hamburger-icon" >
+                <div id="subject-dashboard-hamburger" class="hamburger-mobile col" onclick="showMobileDashboardNavTeacher()">
+                    <div class="hamburger" id="hamburger-3">
+                      <span class="line"></span>
+                      <span class="line"></span>
+                      <span class="line"></span>
+                    </div>
+                </div>
+            </div>
             <div id="teacher-infilearn-logo" class="subject-dashboard-header-title">
                 <a href="index.html">
                     <img  class="infilearn-logo" src="content/icons/new.png" alt="Infilearn Logo" height="60px">
@@ -330,6 +339,11 @@
                 event.preventDefault();
             });
         });
+        $(document).ready(function(){
+        $(".hamburger").click(function(){
+            $(this).toggleClass("is-active");
+        });
+    });
 
     </script>
 </body>

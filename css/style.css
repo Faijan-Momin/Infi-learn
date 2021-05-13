@@ -2492,7 +2492,24 @@ input[type='radio']:checked:after {
     left: 15px;
 }
 
-
+@media only screen and (max-width:450px){    
+    .teacher-dashboard-content-div{
+        display: grid;
+        grid-template-columns: auto;
+        height:fit-content;
+        gap: 0%;
+        z-index: 1;
+        padding: 60px 0px;
+    }
+    #teacher-dashboard-content-navigation-bar{
+        position: fixed;
+        height: 100%;
+        z-index: 3;
+        width:300px;
+        left: -100%;
+        transition: left ease-in-out 500ms;
+    }
+}
 /* Dashboard Suject content */
 
 #teacher-sec-back-btn{
@@ -2532,6 +2549,20 @@ input[type='radio']:checked:after {
 #teacher-select-subject-div h2{
     margin-bottom: 20px;
     font-size: 24px;
+}
+@media only screen and (max-width:450px){
+    #teacher-sec-back-btn{
+        display: none;
+    }
+    .teacher-section-floating-back-btn button{
+        display: none;
+    }
+    .teacher-dashboard-content-upload-content{
+        padding: 10px;
+    }
+    #teacher-select-subject-div h2{
+        font-size: 22px;
+    }
 }
 /* Upload VIdeo */
 .teacher-dashboard-subject-upload-video{
@@ -2700,6 +2731,86 @@ input[type='radio']:checked:after {
 .teacher-dashboard-subject-upload-video-submit-data-btns input[type=button]:hover{
     transition: 300ms ease-in-out;
     transform: scale(0.94);
+}
+@media only screen and (max-width:450px){
+    .teacher-dashboard-subject-upload-video{
+        margin: auto;
+    }
+    #teacher-sub-upload-vid{
+        display: none;
+    }
+    .teacher-dashboard-subject-upload-video-title h3{
+        font-size: 20px;
+    }
+    .teacher-dashboard-subject-upload-video-input-data{
+        display: block;
+        gap: 0px;
+    }
+    .teacher-dashboard-subject-upload-video-textbox{
+        display:grid;
+        grid-template-columns: auto;
+        gap: 0px;
+    }
+    .teacher-dashboard-subject-upload-video-input-data label{
+        font-size: 15px;
+        margin: 0px 10px;
+        align-items: left;
+    }
+    .teacher-dashboard-subject-upload-video-input-data input[type=text]{
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+    .teacher-dashboard-subject-upload-video-input-data select{
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+    .teacher-dashboard-subject-upload-video-input-data option{
+        background-color: #f8f8f8;
+    }
+    .teacher-dashboard-subject-upload-video-input-data input[type=file]{
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+    .teacher-dashboard-subject-upload-video-input-data input::-webkit-file-upload-button{
+        height: 40px;
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+    .teacher-dashboard-subject-upload-video-textbox-description{
+        display: block;
+        margin-top: 10px;
+    }
+    
+    #label-for-board-select{
+        margin: 45px 5px;
+    }
+    #teacher-description-box{
+        height: 200px;
+        width: 300px;
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+    .teacher-dashboard-subject-upload-video-submit-data{
+        padding: 10px;
+    }
+    .teacher-dashboard-subject-upload-video-submit-data-terms input{
+        height: 18px;
+        width: 18px;
+    }
+    .teacher-dashboard-subject-upload-video-submit-data-terms span{
+        font-size: 15px;
+    }
+    .teacher-dashboard-subject-upload-video-submit-data-btns{
+        gap: 30px;
+    }
+    .teacher-dashboard-subject-upload-video-submit-data-btns input[type=submit]{
+        width: 120px;
+        font-size: 16px;
+    }
+    .teacher-dashboard-subject-upload-video-submit-data-btns input[type=button]{
+        width: 120px;
+        font-size: 16px;
+    }
 }
  /* File Upload Sectiom */
  #teacher-sub-upload-file{
