@@ -1,4 +1,3 @@
-@media only screen and (max-width:450px){}
 .chapter-video-page-desktop-header{
     display: flex;
     background-color: #221638;
@@ -49,6 +48,29 @@
     font-weight: 600;
     margin: 5px 0px;
 }
+@media only screen and (max-width:450px){
+    .section-video-page-video-player-section{
+        display: block;
+    }
+    .section-video-player-div{
+        padding: 10px;
+        width: 95%;
+    }
+    .section-video-player-back-btn-and-chapter-title{
+        width: 100%;
+        height: 50px;
+    }
+    .section-video-player-back-btn button{
+        height: 30px;
+        width: 30px;
+        font-size: 14px;
+        
+    }
+    .section-video-player-chapter-title h2{
+        font-size: 18px;
+    }
+}
+
 /* Video COntainer */
 
 .container {
@@ -219,6 +241,25 @@
       vertical-align: middle;
       border-left: 1px solid #dddddd;
   }
+  @media only screen and (max-width:450px){
+      .video-player-container{
+          width: 100%;
+          height: 220px;
+          z-index: 2;
+      }
+      .video-container {
+          height: fit-content;
+          background-color: black;
+          
+      }
+      .player-container {
+          height: 40px;
+      }
+      .play-control, .volume-control {
+          width: 40px;
+          height: 40px;
+      }
+  }
   /* Video contener end */
 .section-video-player-video-title-and-details{
     padding: 0px 10px;
@@ -239,7 +280,7 @@
 .section-video-player-video-details{
     display: flex;
     margin: auto;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     font-size: 16px;
     color: black;
@@ -249,8 +290,7 @@
     margin:10px 0px;
 }
 .section-video-player-video-detail-view-release-date{
-    position: absolute;
-    right: 30%;
+    padding: 0px 10px;
     z-index: 1;
 }
 .video-detai-end-hr{
@@ -258,6 +298,24 @@
     border: 0.5 px solid gray;
     background-color: gray;
     margin-top: 30px;
+}
+@media only screen and (max-width:450px){
+    .section-video-player-video-title-and-details{
+        padding: 5px;
+    }
+    .section-video-player-video-title h2{
+        font-size: 18px;
+    }
+    .section-video-player-video-details{
+        justify-content: space-between;
+        font-size: 12px;
+    }
+    .section-video-player-video-details p{
+        margin:10px 0px;
+    }
+    .section-video-player-video-detail-view-release-date{
+        z-index: 1;
+    }
 }
 /* Video description */
 .section-video-player-video-tab-pane a{
@@ -321,18 +379,17 @@
     transition: all 0.3s ease-in-out;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.3)
   }
-  
-  @media only screen and (max-width: 600px) {
-    .section-video-player-video-tab-pane ul{
-      display: block;
-      transform: none;
-    }
-    .section-video-player-video-tab-pane{
-      height: auto;
-        transform: none;
-        min-width: 200px;
-    }
+  @media only screen and (max-width:450px){
+      .section-video-player-video-tab-pane{
+        width: fit-content;
+        min-width: fit-content;
+      }
+      .section-video-player-video-tab-pane ul{
+        font-size: 14px;
+        grid-template-columns: 90px 70px 100px;
+      }
   }
+
 
   /* Video Data */
   .section-video-player-video-data-description{
@@ -347,6 +404,15 @@
       word-wrap: break-word;
       padding: 10px 30px;
   }
+  @media only screen and (max-width:450px){
+    .section-video-player-video-data-description{
+        width: 95%;
+        font-size: 15px;
+        word-wrap: break-word;
+        padding: 10px;
+    }
+  }
+  /* Video QNA */
   .section-video-player-video-data-qna{
       display: none;
       padding: 20px 0px 0px 0px;
@@ -444,6 +510,60 @@
     border-radius: 10px;
     width: 100%;
 }
+@media only screen and (max-width:450px){
+    .section-video-player-video-data-qna{
+        padding: 10px;
+        width: 95%;
+        font-size: 15px;
+    }
+    .section-video-player-video-data-qna-add-comment{
+        padding: 5px;
+    }
+    .section-video-player-video-data-qna-add-comment-input{
+        width: 100%;
+        height: 40px;
+        border-bottom: 1px solid gray;
+    }
+  .section-video-player-video-data-qna-add-comment-input input{
+      height: 30px;
+      width: 100%;
+      font-size: 15px;
+      padding: 0px 5px;
+  }
+  .section-video-player-video-data-qna-submit-comment-btn{
+      height: 40px;
+      gap: 10px;
+  }
+  .section-video-player-video-data-qna-submit-comment-btn input[type=submit]{
+      height: 30px;
+      width: 100px;
+      font-size: 15px;
+  }
+  .section-video-player-video-data-qna-submit-comment-btn input[type=button]{
+      height: 40px;
+      width: 100px;
+      background-color: white;
+      color: #fe4a55;
+      font-size: 18px;
+      font-family: 'Nunito';
+      font-weight: 500;
+      text-align: center;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .section-video-player-video-data-qna-all-comments{
+      padding: 20px 2%;
+  }
+  .section-video-player-video-data-qna-single-comment-username h3{
+      font-size: 15px;
+  }
+  .section-video-player-video-data-qna-single-comment-user-comment p{
+      font-size: 14px;
+      width: 90%;
+  }
+}
 /* Video Data Files */
 .section-video-player-video-data-files{
       display: none;
@@ -490,7 +610,50 @@
     margin: 10px 0px 0px 0px;
     text-align: center;
 }
-
+@media only screen and (max-width:450px){
+    .section-video-player-video-data-files{
+        padding: 10px;
+        width: 95%;
+  }
+  .section-video-player-video-data-all-files{
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 25px;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+  }
+  .section-video-player-video-data-single-file{
+      height: 120px;
+      width: 100px;
+      color: black;
+      border: 1px solid rgb(212, 212, 212);
+      cursor: pointer;
+  }
+  .section-video-player-video-data-single-file-img{
+      height: 60%;
+      width: 100%;
+      background-image: url('../content/icons/pdf.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 55%;
+      background-blend-mode: multiply;
+      background-color: #f7f7f7;
+  }
+  .section-video-player-video-data-single-file-name{
+      padding: 2px 3px;
+      font-size: 8px;
+      color: black;
+      font-family: 'Nunito';
+      background-color: white;
+      line-height: 12px;
+      text-overflow: ellipsis;
+  }
+  .section-video-player-video-data-single-file-name h3{
+      margin: 10px 0px 0px 0px;
+      text-align: center;
+  }
+}
 
 /* Video Suggestion Division */
 .section-video-suggestion-div{
@@ -549,4 +712,9 @@
     font-family: 'Nunito';
     color: gray;
     font-weight: 500;
+}
+@media only screen and (max-width:450px){
+    .section-video-suggestion-div{
+        display: none;
+    }
 }
