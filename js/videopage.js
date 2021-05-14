@@ -153,7 +153,7 @@ var mainFunction =
 			$(mainFunction.elements.videoPlayerContainer).height("450");
 			$(mainFunction.elements.videoContainer).height("410");
 		}
-		$('body').css("-webkit-transform", "rotate(0deg)"); 
+		$('body').css("-webkit-transform:rotate(0deg) translatex(100%);"); 
 		$(mainFunction.elements.progress).width( $(mainFunction.elements.playerContainer).width() - 223 );
 		$(mainFunction.elements.progressBackground).width( $(mainFunction.elements.playerContainer).width() - 223 - 40 );		
 		$(mainFunction.elements.progressHidden).width( $(mainFunction.elements.playerContainer).width() - 223 - 40 );		
