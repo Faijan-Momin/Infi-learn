@@ -144,8 +144,16 @@ var mainFunction =
 		$(mainFunction.elements.container).css("display", "-webkit-flex");
 		$(mainFunction.elements.container).css("display", "flex");
 		$(mainFunction.elements.videoPlayerContainer).width("100%");
-		$(mainFunction.elements.videoPlayerContainer).height("450");
-		$(mainFunction.elements.videoContainer).height("410");
+		if ( $(window).width() < 450) {
+			$(mainFunction.elements.videoPlayerContainer).height("220");
+			$(mainFunction.elements.videoContainer).height("fit-content");
+			$('body').css("-webkit-transform:rotate(-90deg) translatex(-100%);"); 
+		}
+		else{
+			$(mainFunction.elements.videoPlayerContainer).height("450");
+			$(mainFunction.elements.videoContainer).height("410");
+		}
+		$('body').css("-webkit-transform", "rotate(0deg)"); 
 		$(mainFunction.elements.progress).width( $(mainFunction.elements.playerContainer).width() - 223 );
 		$(mainFunction.elements.progressBackground).width( $(mainFunction.elements.playerContainer).width() - 223 - 40 );		
 		$(mainFunction.elements.progressHidden).width( $(mainFunction.elements.playerContainer).width() - 223 - 40 );		
