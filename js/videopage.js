@@ -144,6 +144,11 @@ var mainFunction =
 		$(mainFunction.elements.container).css("display", "-webkit-flex");
 		$(mainFunction.elements.container).css("display", "flex");
 		$(mainFunction.elements.videoPlayerContainer).width("100%");
+		if ( $(window).width() < 650) {
+			$(mainFunction.elements.videoPlayerContainer).height("220");
+			$(mainFunction.elements.videoContainer).height("fit-content");
+			$('body').css("-webkit-transform:rotate(-90deg) translatex(-100%);"); 
+		}
 		if ( $(window).width() < 450) {
 			$(mainFunction.elements.videoPlayerContainer).height("220");
 			$(mainFunction.elements.videoContainer).height("fit-content");
