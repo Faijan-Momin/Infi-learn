@@ -17,6 +17,7 @@ body{
     padding: 0px;
     overflow-x: hidden;
     max-width: 100%;
+    -webkit-locale: "en";
 }
 header{
     margin: 0px;
@@ -2819,6 +2820,22 @@ input[type='radio']:checked:after {
  #file-upload-files{
      margin-top: 15px;
  }
+
+ /* Teacher History Section */
+ #teacher-sub-history{
+     display: none;
+ }
+ .teacher-dashboard-subject-history{
+    width: 100%;
+    height: fit-content;
+ }
+ #teacher-dashboard-file-history-table{
+     display: none;
+ }
+ #teacher-history-panel-btns button:focus{
+    background-color: #211638;
+ }
+
 
  /* Verification Pages */
  .verification-pages-section{

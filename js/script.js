@@ -78,20 +78,44 @@ function showTechContent(nameofdiv){
         document.getElementById('teacher-sub-upload-vid').style.display ="block";
         document.getElementById('teacher-sub-upload-file').style.display ="none";
         document.getElementById('teacher-sec-back-btn').style.display ="block";
+        document.getElementById('teacher-sub-history').style.display = "none";
     }
     if(nameofdiv == "file-upload"){
         document.getElementById('teacher-select-subject-div').style.display ="none";
         document.getElementById('teacher-sub-upload-file').style.display ="block";
         document.getElementById('teacher-sub-upload-vid').style.display ="none";
         document.getElementById('teacher-sec-back-btn').style.display ="block";
+        document.getElementById('teacher-sub-history').style.display = "none";
     }
     if(nameofdiv == "show-subjects"){
         document.getElementById('teacher-select-subject-div').style.display ="block";
         document.getElementById('teacher-sub-upload-file').style.display ="none";
         document.getElementById('teacher-sub-upload-vid').style.display ="none";
         document.getElementById('teacher-sec-back-btn').style.display ="none";
+        document.getElementById('teacher-sub-history').style.display = "none";
+    }
+    if(nameofdiv == "show-history"){
+        document.getElementById('teacher-select-subject-div').style.display ="none";
+        document.getElementById('teacher-sub-upload-vid').style.display ="none";
+        document.getElementById('teacher-sub-upload-file').style.display ="none";
+        document.getElementById('teacher-sec-back-btn').style.display ="block";
+        document.getElementById('teacher-sub-history').style.display = "block";
     }
 }
+
+// Teacher Panel Historry Page
+
+function ManageHistoryTeacher(command){
+    if(command == "showVideoTable"){
+        document.getElementById('teacher-dashboard-video-history-table').style.display = "block";
+        document.getElementById('teacher-dashboard-file-history-table').style.display = "none";
+    }
+    if(command == "showFileTable"){
+        document.getElementById('teacher-dashboard-video-history-table').style.display = "none";
+        document.getElementById('teacher-dashboard-file-history-table').style.display = "block";
+    }
+}
+
 
 // Manage UserS
 
