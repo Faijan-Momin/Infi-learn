@@ -23,9 +23,9 @@
     width: 150px;
     background-color: rgb(224, 224, 224);
     border-radius: 50%;
-    border: none;
+    border: 1px solid white;
     outline: none;
-    background-image: url('https://static5.depositphotos.com/1049184/509/i/600/depositphotos_5099757-stock-photo-the-man-with-no-face.jpg');
+    background-image: url('../content/default/defaultprofile.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
