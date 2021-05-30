@@ -44,7 +44,7 @@
 
 
 function ModalShow(){
-    document.getElementById("modal").style.zIndex = "3";
+    document.getElementById("modal").style.zIndex = "6";
     window.location.href = "#modal";
 }
 function HideModal(){
